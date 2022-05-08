@@ -4,25 +4,21 @@ import (
 	"6.824/labgob"
 	"6.824/labrpc"
 	"6.824/raft"
-	"log"
 	"sync"
 	"sync/atomic"
+	"time"
 )
-
-const Debug = false
-
-func DPrintf(format string, a ...interface{}) (n int, err error) {
-	if Debug {
-		log.Printf(format, a...)
-	}
-	return
-}
-
 
 type Op struct {
 	// Your definitions here.
 	// Field names must start with capital letters,
 	// otherwise RPC will break.
+	Op       string // "Put" or "Append"
+	Key      string
+	Value    string
+	ClientNo int64
+	OpId     int
+	ReqId    int64
 }
 
 type KVServer struct {
@@ -35,15 +31,71 @@ type KVServer struct {
 	maxraftstate int // snapshot if log grows this big
 
 	// Your definitions here.
+	lastApplies    map[int64]int64 // 记录每个客户端的执行到的请求序列号
+	opMap          map[int]chan Op
+	db             map[string]string
 }
 
-
-func (kv *KVServer) Get(args *GetArgs, reply *GetReply) {
+func (kv *KVServer) Get(args *Args, reply *Reply) {
 	// Your code here.
+	op := Op{
+		Op:       GET,
+		Key:      args.Key,
+		ClientNo: args.ClientNo,
+		ReqId:    args.ReqNo,
+	}
+
+	DPrintf("server %d：args[%+v]", kv.me, args)
+	start := time.Now().UnixNano()
+	index, _, isLeader := kv.rf.Start(op)
+	// 判断是否是Leader
+	if !isLeader {
+		reply.Err = ErrWrongLeader
+		return
+	}
+	DPrintf("server %d：start doing index[%d] args[%+v] ", kv.me, index, args)
+	receiveOP := kv.waiting(index)
+	DPrintf("server %d finish index[%d]：%+v cost %+vms",
+		kv.me,index, args, (time.Now().UnixNano()-start)/1e6)
+
+	reply.Err = OK
+	if receiveOP != op {
+		reply.Err = ErrWrongLeader
+		return
+	}
+
+	kv.mu.Lock()
+	defer kv.mu.Unlock()
+	reply.Value = kv.db[op.Key]
 }
 
-func (kv *KVServer) PutAppend(args *PutAppendArgs, reply *PutAppendReply) {
+func (kv *KVServer) PutAppend(args *Args, reply *Reply) {
 	// Your code here.
+	op := Op{
+		Op:       args.Op,
+		Key:      args.Key,
+		Value:    args.Value,
+		ClientNo: args.ClientNo,
+		ReqId:    args.ReqNo,
+	}
+
+	DPrintf("server %d：args[%+v]", kv.me, args)
+	start := time.Now().UnixNano()
+	index, _, isLeader := kv.rf.Start(op)
+
+	if !isLeader {
+		reply.Err = ErrWrongLeader
+		return
+	}
+	DPrintf("server %d start doing index[%d]：args[%+v] ", kv.me,index, args)
+	receiveOP := kv.waiting(index)
+	DPrintf("server %d finish index[%d]：%+v cost %+vms",
+		kv.me, index, args, (time.Now().UnixNano()-start)/1e6)
+
+	reply.Err = OK
+	if op != receiveOP {
+		reply.Err = ErrWrongLeader
+	}
 }
 
 //
@@ -65,6 +117,60 @@ func (kv *KVServer) Kill() {
 func (kv *KVServer) killed() bool {
 	z := atomic.LoadInt32(&kv.dead)
 	return z == 1
+}
+
+func (kv *KVServer) getOPChannel(index int) chan Op {
+	kv.mu.Lock()
+	defer kv.mu.Unlock()
+
+	if _ , ok := kv.opMap[index]; !ok {
+		kv.opMap[index] = make(chan Op , 10)
+	}
+	return kv.opMap[index]
+}
+
+func (kv *KVServer) waiting(index int) Op {
+	DPrintf("server[%d]: index[%d] is waiting", kv.me, index)
+	defer DPrintf("server[%d]: index[%d] is finish", kv.me, index)
+
+	ch := kv.getOPChannel(index)
+	defer func(){
+		kv.mu.Lock()
+		defer kv.mu.Unlock()
+		delete(kv.opMap, index)
+	}()
+
+	select {
+	case op := <-ch:
+			return op
+	case <-time.After(time.Millisecond * 500):
+		return Op{}
+	}
+}
+
+func (kv *KVServer) applier() {
+	for m := range kv.applyCh {
+		DPrintf("server[%d]commit %+v", kv.me, m.CommandIndex)
+		if m.CommandValid {
+			op := m.Command.(Op)
+			
+			kv.mu.Lock()
+			maxId , ok := kv.lastApplies[op.ClientNo]
+			if !ok || op.ReqId > maxId {
+				switch op.Op {
+				case PUT:
+					kv.db[op.Key] = op.Value
+				case APPEND:
+					kv.db[op.Key] += op.Value
+				}
+				kv.lastApplies[op.ClientNo] = op.ReqId
+			}
+			kv.mu.Unlock()
+			
+			ch := kv.getOPChannel(m.CommandIndex)
+			ch <- op		
+		}
+	}
 }
 
 //
@@ -94,8 +200,11 @@ func StartKVServer(servers []*labrpc.ClientEnd, me int, persister *raft.Persiste
 
 	kv.applyCh = make(chan raft.ApplyMsg)
 	kv.rf = raft.Make(servers, me, persister, kv.applyCh)
+	kv.lastApplies = make(map[int64]int64)
+	kv.opMap = make(map[int]chan Op)
+	kv.db = make(map[string]string)
 
-	// You may need initialization code here.
+	go kv.applier()
 
 	return kv
 }

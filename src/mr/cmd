@@ -1,0 +1,12 @@
+
+rm mr-out*
+go run -race mrcoordinator.go pg-*.txt
+
+go build -race -buildmode=plugin ../mrapps/wc.go
+go run -race mrworker.go wc.so
+
+cat mr-out-* | sort | more
+
+bash test-mr.sh
+
+go run -race mrsequential.go wc.so pg*.txt

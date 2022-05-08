@@ -1,0 +1,34 @@
+=== RUN   TestInitialElection2A
+Test (2A): initial election ...
+2021/08/04 00:01:36 2 receive 2 vote and status is 2 in term 1 and now term is 1
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+2 is leader 
+  ... Passed --   3.0  3   56   16246    0
+--- PASS: TestInitialElection2A (2.98s)
+PASS
+ok  	6.824/raft	3.021s

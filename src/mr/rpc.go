@@ -24,6 +24,29 @@ type ExampleReply struct {
 
 // Add your RPC definitions here.
 
+const (
+	NONTASK = iota
+	MAPTASK
+	REDUCETASK
+)
+
+type Args struct {
+	WorkerId int //发出请求的workerId
+	FilePath string  // 文件位置
+
+}
+
+type RegisterReply struct {
+	WorkerId int
+}
+
+type Reply struct {
+	FilePath []string  //文件位置
+	TaskType int8 // 表示任务的种类 ，map or reduce
+	NReduce int // nums of reduce task
+	ReduceTaskNum int
+}
+
 
 // Cook up a unique-ish UNIX-domain socket name
 // in /var/tmp, for the coordinator.

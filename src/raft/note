@@ -1,0 +1,18 @@
+TestFigure8Unreliable2C：
+    1）请求 rpc 丢失的概率为 10 % 
+        if reliable == false && (rand.Int()%1000) < 100 {
+			// drop the request, return as if timeout
+			req.replyCh <- replyMsg{false, nil}
+			return
+		}
+    2）回复 rpc 超时的概率为 2 / 3
+        if longreordering == true && rand.Intn(900) < 600 {
+			// delay the response for a while
+			ms := 200 + rand.Intn(1+rand.Intn(2000))
+			// Russ points out that this timer arrangement will decrease
+			// the number of goroutines, so that the race
+			// detector is less likely to get upset.
+			time.AfterFunc(time.Duration(ms)*time.Millisecond, func() {
+				atomic.AddInt64(&rn.bytes, int64(len(reply.reply)))
+				req.replyCh <- reply
+			})

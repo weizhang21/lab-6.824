@@ -1,33 +1,61 @@
 package kvraft
 
+import "log"
+
+const Debug = true
+
+func DPrintf(format string, a ...interface{}) (n int, err error) {
+	if Debug {
+		log.Printf(format, a...)
+	}
+	return
+}
+
 const (
-	OK             = "OK"
-	ErrNoKey       = "ErrNoKey"
-	ErrWrongLeader = "ErrWrongLeader"
+	OK             Err = "OK"
+	ErrNoKey       Err = "ErrNoKey"
+	ErrWrongLeader Err = "ErrWrongLeader"
+)
+
+const (
+	GET    = "Get"
+	PUT    = "Put"
+	APPEND = "Append"
 )
 
 type Err string
 
-// Put or Append
-type PutAppendArgs struct {
-	Key   string
-	Value string
-	Op    string // "Put" or "Append"
-	// You'll have to add definitions here.
-	// Field names must start with capital letters,
-	// otherwise RPC will break.
+type Args struct {
+	Key      string
+	Value    string
+	Op       string // "Put" or "Append"
+	ClientNo int64
+	ReqNo    int64
 }
 
-type PutAppendReply struct {
-	Err Err
-}
-
-type GetArgs struct {
-	Key string
-	// You'll have to add definitions here.
-}
-
-type GetReply struct {
+type Reply struct {
 	Err   Err
 	Value string
+}
+
+func max(x, y int) int {
+	if x >= y {
+		return x
+	}
+	return y
+}
+
+func getRpcName(op string) string {
+	var rpcName string
+	switch op {
+	case GET:
+		rpcName = "KVServer.Get"
+	case PUT:
+		rpcName = "KVServer.PutAppend"
+	case APPEND:
+		rpcName = "KVServer.PutAppend"
+	default:
+		panic("op invalid")
+	}
+	return rpcName
 }

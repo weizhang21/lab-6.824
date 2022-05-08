@@ -1,0 +1,2799 @@
+=== RUN   TestFigure8Unreliable2C
+Test (2C): Figure 8 (unreliable) ...
+2021/07/12 21:12:04 0 : 1
+2021/07/12 21:12:04 4 : 1
+2021/07/12 21:12:04 ========== {1 false 0 0} ======== me is 0 term is 1 receive from 4
+2021/07/12 21:12:04 1 vote to 4 in term 1 reply is &{0 true 0 0}
+2021/07/12 21:12:04 4 : 1
+2021/07/12 21:12:04 2 vote to 0 in term 1 reply is &{0 true 0 0}
+2021/07/12 21:12:04 ========== {0 true 0 0} ======== me is 0 term is 1 receive from 2
+2021/07/12 21:12:04 0 : 2
+2021/07/12 21:12:04 ========== {1 false 0 0} ======== me is 4 term is 1 receive from 0
+2021/07/12 21:12:04 3 vote to 0 in term 1 reply is &{0 true 0 0}
+2021/07/12 21:12:04 ========== {0 true 0 0} ======== me is 0 term is 1 receive from 3
+2021/07/12 21:12:04 0 : 3
+2021/07/12 21:12:04 ========== {1 false 0 0} ======== me is 4 term is 1 receive from 2
+2021/07/12 21:12:04 0 receive 3 vote and status is 2 in term 1 and now term is 1
+2021/07/12 21:12:04 ========== {1 false 0 0} ======== me is 0 term is 1 receive from 1
+2021/07/12 21:12:04 ========== {1 false 0 0} ======== me is 4 term is 1 receive from 3
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 2
+2021/07/12 21:12:04 4 receive 1 vote and status is 0 in term 1 and now term is 1
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 3
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 4
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 5
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 6
+2021/07/12 21:12:04 2 : 1
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 7
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 8
+2021/07/12 21:12:04 1 vote to 2 in term 2 reply is &{1 true 0 0}
+2021/07/12 21:12:04 ========== {1 true 0 0} ======== me is 2 term is 2 receive from 1
+2021/07/12 21:12:04 2 : 2
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 9
+2021/07/12 21:12:04 4 vote to 2 in term 2 reply is &{1 true 0 0}
+2021/07/12 21:12:04 ========== {1 true 0 0} ======== me is 2 term is 2 receive from 4
+2021/07/12 21:12:04 2 : 3
+2021/07/12 21:12:04 2 receive 3 vote and status is 2 in term 2 and now term is 2
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 10
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 3
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 11
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 4
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 12
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 5
+2021/07/12 21:12:04 3 vote to 2 in term 2 reply is &{1 true 0 0}
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 13
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 6
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 14
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 7
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 15
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 8
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 16
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 9
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 17
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 10
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 18
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 11
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 19
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 12
+2021/07/12 21:12:04 ===leader is me 0 == , now logs len is 20
+2021/07/12 21:12:04 ===leader is me 2 == , now logs len is 13
+2021/07/12 21:12:04 4 : 1
+2021/07/12 21:12:04 3 vote to 4 in term 3 reply is &{2 true 0 0}
+2021/07/12 21:12:04 ========== {2 true 0 0} ======== me is 4 term is 3 receive from 3
+2021/07/12 21:12:04 4 : 2
+2021/07/12 21:12:04 1 vote to 4 in term 3 reply is &{2 true 0 0}
+2021/07/12 21:12:04 ========== {2 true 0 0} ======== me is 4 term is 3 receive from 1
+2021/07/12 21:12:04 4 : 3
+2021/07/12 21:12:04 4 receive 3 vote and status is 2 in term 3 and now term is 3
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 21
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 14
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 3
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 22
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 15
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 4
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 23
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 16
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 5
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 24
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 17
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 6
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 25
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 18
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 7
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 26
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 19
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 8
+2021/07/12 21:12:05 3 : 1
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 27
+2021/07/12 21:12:05 1 vote to 3 in term 4 reply is &{3 true 0 0}
+2021/07/12 21:12:05 ========== {3 true 0 0} ======== me is 3 term is 4 receive from 1
+2021/07/12 21:12:05 3 : 2
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 20
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 9
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 28
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 21
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 10
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 29
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 22
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 11
+2021/07/12 21:12:05 3 receive 2 vote and status is 0 in term 4 and now term is 4
+2021/07/12 21:12:05 leader term is 3 and my term is 4
+2021/07/12 21:12:05 leader term is 3 and my term is 4
+2021/07/12 21:12:05 4 : 1
+2021/07/12 21:12:05 1 vote to 4 in term 5 reply is &{4 true 0 0}
+2021/07/12 21:12:05 ========== {4 true 0 0} ======== me is 4 term is 5 receive from 1
+2021/07/12 21:12:05 4 : 2
+2021/07/12 21:12:05 3 vote to 4 in term 5 reply is &{4 true 0 0}
+2021/07/12 21:12:05 ========== {4 true 0 0} ======== me is 4 term is 5 receive from 3
+2021/07/12 21:12:05 4 : 3
+2021/07/12 21:12:05 4 receive 3 vote and status is 2 in term 5 and now term is 5
+2021/07/12 21:12:05 ===leader is me 0 == , now logs len is 30
+2021/07/12 21:12:05 ===leader is me 2 == , now logs len is 23
+2021/07/12 21:12:05 ===leader is me 4 == , now logs len is 12
+2021/07/12 21:12:06 3 : 1
+2021/07/12 21:12:06 4 vote to 3 in term 6 reply is &{5 true 0 0}
+2021/07/12 21:12:06 ========== {5 true 0 0} ======== me is 3 term is 6 receive from 4
+2021/07/12 21:12:06 3 : 2
+2021/07/12 21:12:06 1 vote to 3 in term 6 reply is &{5 true 0 0}
+2021/07/12 21:12:06 ========== {5 true 0 0} ======== me is 3 term is 6 receive from 1
+2021/07/12 21:12:06 3 : 3
+2021/07/12 21:12:06 3 receive 3 vote and status is 2 in term 6 and now term is 6
+2021/07/12 21:12:06 4 : 1
+2021/07/12 21:12:06 3 vote to 4 in term 7 reply is &{6 true 0 0}
+2021/07/12 21:12:06 ========== {6 true 0 0} ======== me is 4 term is 7 receive from 3
+2021/07/12 21:12:06 4 : 2
+2021/07/12 21:12:06 1 vote to 4 in term 7 reply is &{6 true 0 0}
+2021/07/12 21:12:06 ========== {6 true 0 0} ======== me is 4 term is 7 receive from 1
+2021/07/12 21:12:06 4 : 3
+2021/07/12 21:12:06 4 receive 3 vote and status is 2 in term 7 and now term is 7
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 31
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 24
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 13
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 32
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 25
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 14
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 33
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 26
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 15
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 34
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 27
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 16
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 35
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 28
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 17
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 36
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 29
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 18
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 37
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 30
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 19
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 38
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 31
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 20
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 39
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 32
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 21
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 40
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 33
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 22
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 41
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 34
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 23
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 42
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 35
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 24
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 43
+2021/07/12 21:12:06 leader term is 2 and my term is 7
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 36
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 25
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 44
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 37
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 26
+2021/07/12 21:12:06 leader term is 2 and my term is 7
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 45
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 38
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 27
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 46
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 39
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 28
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 47
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 40
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 29
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 48
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 41
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 30
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 49
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 42
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 31
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 50
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 43
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 32
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 51
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 44
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 33
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 52
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 45
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 34
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 53
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 46
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 35
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 54
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 47
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 36
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 55
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 48
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 37
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 56
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 49
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 38
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 57
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 50
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 39
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 58
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 51
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 40
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 59
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 52
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 41
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 60
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 53
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 42
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 61
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 54
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 43
+2021/07/12 21:12:06 leader term is 2 and my term is 7
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 62
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 55
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 44
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 63
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 56
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 45
+2021/07/12 21:12:06 leader term is 2 and my term is 7
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 64
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 57
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 46
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 65
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 58
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 47
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 66
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 59
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 48
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 67
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 60
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 49
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 68
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 61
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 50
+2021/07/12 21:12:06 ===leader is me 0 == , now logs len is 69
+2021/07/12 21:12:06 ===leader is me 2 == , now logs len is 62
+2021/07/12 21:12:06 ===leader is me 4 == , now logs len is 51
+2021/07/12 21:12:07 3 : 1
+2021/07/12 21:12:07 1 not vote to 3 in term 8 and my lastLogTerm is 7 len is 46 args lastterm is 7  len is 45
+2021/07/12 21:12:07 3 : 1
+2021/07/12 21:12:07 3 receive 1 vote and status is 0 in term 8 and now term is 8
+2021/07/12 21:12:07 1 : 1
+2021/07/12 21:12:07 1 : 1
+2021/07/12 21:12:07 1 receive 1 vote and status is 0 in term 9 and now term is 9
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 70
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 63
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 52
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 71
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 64
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 53
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 72
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 65
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 54
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 73
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 66
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 55
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 74
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 67
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 56
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 75
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 68
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 57
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 76
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 69
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 58
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 77
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 70
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 59
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 78
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 71
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 60
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 79
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 72
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 61
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 80
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 73
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 62
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 81
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 74
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 63
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 82
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 75
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 64
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 83
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 76
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 65
+2021/07/12 21:12:07 ===leader is me 0 == , now logs len is 84
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 77
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 66
+2021/07/12 21:12:07 leader term is 1 and my term is 9
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 78
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 67
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 79
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 68
+2021/07/12 21:12:07 leader term is 1 and my term is 8
+2021/07/12 21:12:07 3 : 1
+2021/07/12 21:12:07 ========== {9 false 0 0} ======== me is 3 term is 9 receive from 1
+2021/07/12 21:12:07 0 : 1
+2021/07/12 21:12:07 3 receive 1 vote and status is 0 in term 9 and now term is 9
+2021/07/12 21:12:07 1 : 1
+2021/07/12 21:12:07 1 : 1
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 80
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 69
+2021/07/12 21:12:07 0 receive 1 vote and status is 0 in term 10 and now term is 10
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 81
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 70
+2021/07/12 21:12:07 ===leader is me 2 == , now logs len is 82
+2021/07/12 21:12:07 ===leader is me 4 == , now logs len is 71
+2021/07/12 21:12:07 1 receive 1 vote and status is 0 in term 10 and now term is 10
+2021/07/12 21:12:07 leader term is 7 and my term is 9
+2021/07/12 21:12:07 leader term is 7 and my term is 10
+2021/07/12 21:12:07 4 : 1
+2021/07/12 21:12:07 4 : 1
+2021/07/12 21:12:07 3 vote to 4 in term 10 reply is &{9 true 0 0}
+2021/07/12 21:12:07 ========== {9 true 0 0} ======== me is 4 term is 10 receive from 3
+2021/07/12 21:12:07 4 : 2
+2021/07/12 21:12:07 ========== {10 false 0 0} ======== me is 4 term is 10 receive from 1
+2021/07/12 21:12:07 4 receive 2 vote and status is 0 in term 10 and now term is 10
+2021/07/12 21:12:07 1 : 1
+2021/07/12 21:12:07 3 vote to 1 in term 11 reply is &{10 true 0 0}
+2021/07/12 21:12:07 ========== {10 true 0 0} ======== me is 1 term is 11 receive from 3
+2021/07/12 21:12:07 1 : 2
+2021/07/12 21:12:07 4 not vote to 1 in term 11 and my lastLogTerm is 7 len is 70 args lastterm is 7  len is 46
+2021/07/12 21:12:07 ========== {10 false 0 0} ======== me is 1 term is 11 receive from 4
+2021/07/12 21:12:07 0 : 1
+2021/07/12 21:12:08 1 receive 2 vote and status is 0 in term 11 and now term is 11
+2021/07/12 21:12:08 0 : 1
+2021/07/12 21:12:08 0 receive 1 vote and status is 0 in term 11 and now term is 11
+2021/07/12 21:12:08 4 : 1
+2021/07/12 21:12:08 4 : 1
+2021/07/12 21:12:08 1 vote to 4 in term 12 reply is &{11 true 0 0}
+2021/07/12 21:12:08 ========== {11 true 0 0} ======== me is 4 term is 12 receive from 1
+2021/07/12 21:12:08 4 : 2
+2021/07/12 21:12:08 4 receive 2 vote and status is 0 in term 12 and now term is 12
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 83
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 84
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 85
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 86
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 87
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 88
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 89
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 90
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 91
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 92
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 93
+2021/07/12 21:12:08 3 : 1
+2021/07/12 21:12:08 3 : 1
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 94
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 95
+2021/07/12 21:12:08 ========== {12 false 0 0} ======== me is 3 term is 12 receive from 1
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 96
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 97
+2021/07/12 21:12:08 3 receive 1 vote and status is 0 in term 12 and now term is 12
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 98
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 99
+2021/07/12 21:12:08 0 : 1
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 100
+2021/07/12 21:12:08 0 receive 1 vote and status is 0 in term 12 and now term is 12
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 101
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 102
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 103
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 104
+2021/07/12 21:12:08 4 : 1
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 105
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 106
+2021/07/12 21:12:08 3 vote to 4 in term 13 reply is &{12 true 0 0}
+2021/07/12 21:12:08 ========== {12 true 0 0} ======== me is 4 term is 13 receive from 3
+2021/07/12 21:12:08 4 : 2
+2021/07/12 21:12:08 1 vote to 4 in term 13 reply is &{12 true 0 0}
+2021/07/12 21:12:08 ========== {12 true 0 0} ======== me is 4 term is 13 receive from 1
+2021/07/12 21:12:08 4 : 3
+2021/07/12 21:12:08 4 receive 3 vote and status is 2 in term 13 and now term is 13
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 107
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 72
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 108
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 73
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 109
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 74
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 110
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 75
+2021/07/12 21:12:08 0 : 1
+2021/07/12 21:12:08 0 receive 1 vote and status is 0 in term 13 and now term is 13
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 111
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 76
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 112
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 77
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 113
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 78
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 114
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 79
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 115
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 80
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 116
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 81
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 117
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 82
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 118
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 83
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 119
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 84
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 120
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 85
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 121
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 86
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 122
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 87
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 123
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 88
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 124
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 89
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 125
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 90
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 126
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 91
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 127
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 92
+2021/07/12 21:12:08 ===leader is me 2 == , now logs len is 128
+2021/07/12 21:12:08 ===leader is me 4 == , now logs len is 93
+2021/07/12 21:12:09 0 : 1
+2021/07/12 21:12:09 0 receive 1 vote and status is 0 in term 14 and now term is 14
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 129
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 94
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 130
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 95
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 131
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 96
+2021/07/12 21:12:09 0 : 1
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 132
+2021/07/12 21:12:09 1 not vote to 0 in term 15 and my lastLogTerm is 13 len is 92 args lastterm is 1  len is 83
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 97
+2021/07/12 21:12:09 ========== {13 false 0 0} ======== me is 0 term is 15 receive from 1
+2021/07/12 21:12:09 3 not vote to 0 in term 15 and my lastLogTerm is 13 len is 92 args lastterm is 1  len is 83
+2021/07/12 21:12:09 ========== {13 false 0 0} ======== me is 0 term is 15 receive from 3
+2021/07/12 21:12:09 0 receive 1 vote and status is 0 in term 15 and now term is 15
+2021/07/12 21:12:09 1 : 1
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 133
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 98
+2021/07/12 21:12:09 0 vote to 1 in term 16 reply is &{15 true 0 0}
+2021/07/12 21:12:09 ========== {15 true 0 0} ======== me is 1 term is 16 receive from 0
+2021/07/12 21:12:09 1 : 2
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 134
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 99
+2021/07/12 21:12:09 3 vote to 1 in term 16 reply is &{15 true 0 0}
+2021/07/12 21:12:09 ========== {15 true 0 0} ======== me is 1 term is 16 receive from 3
+2021/07/12 21:12:09 1 : 3
+2021/07/12 21:12:09 1 receive 3 vote and status is 2 in term 16 and now term is 16
+2021/07/12 21:12:09 ===leader is me 1 == , now logs len is 94
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 135
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 100
+2021/07/12 21:12:09 ===leader is me 1 == , now logs len is 95
+2021/07/12 21:12:09 ===leader is me 2 == , now logs len is 136
+2021/07/12 21:12:09 ===leader is me 4 == , now logs len is 101
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 96
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 137
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 102
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 97
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 138
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 103
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 98
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 139
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 104
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 99
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 140
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 105
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 100
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 141
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 106
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 101
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 142
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 107
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 102
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 143
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 108
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 103
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 144
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 109
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 104
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 145
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 110
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 105
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 146
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 111
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 106
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 147
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 112
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 107
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 148
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 113
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 108
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 149
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 114
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 109
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 150
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 115
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 110
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 151
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 116
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 111
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 152
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 117
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 112
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 153
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 118
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 113
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 154
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 119
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 114
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 155
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 120
+2021/07/12 21:12:10 leader term is 2 and my term is 16
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 115
+2021/07/12 21:12:10 leader term is 2 and my term is 16
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 156
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 121
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 116
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 157
+2021/07/12 21:12:10 3 : 1
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 122
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 117
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 158
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 123
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 118
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 159
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 124
+2021/07/12 21:12:10 0 vote to 3 in term 17 reply is &{16 true 0 0}
+2021/07/12 21:12:10 ========== {16 true 0 0} ======== me is 3 term is 17 receive from 0
+2021/07/12 21:12:10 3 : 2
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 119
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 160
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 125
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 120
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 161
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 126
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 121
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 162
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 127
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 122
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 163
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 128
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 123
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 164
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 129
+2021/07/12 21:12:10 3 receive 2 vote and status is 0 in term 17 and now term is 17
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 124
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 165
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 130
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 125
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 166
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 131
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 126
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 167
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 132
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 127
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 168
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 133
+2021/07/12 21:12:10 leader term is 16 and my term is 17
+2021/07/12 21:12:10 leader term is 16 and my term is 17
+2021/07/12 21:12:10 1 : 1
+2021/07/12 21:12:10 3 vote to 1 in term 18 reply is &{17 true 0 0}
+2021/07/12 21:12:10 ========== {17 true 0 0} ======== me is 1 term is 18 receive from 3
+2021/07/12 21:12:10 1 : 2
+2021/07/12 21:12:10 0 vote to 1 in term 18 reply is &{17 true 0 0}
+2021/07/12 21:12:10 ========== {17 true 0 0} ======== me is 1 term is 18 receive from 0
+2021/07/12 21:12:10 1 : 3
+2021/07/12 21:12:10 1 receive 3 vote and status is 2 in term 18 and now term is 18
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 128
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 169
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 134
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 129
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 170
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 135
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 130
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 171
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 136
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 131
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 172
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 137
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 132
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 173
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 138
+2021/07/12 21:12:10 ===leader is me 1 == , now logs len is 133
+2021/07/12 21:12:10 ===leader is me 2 == , now logs len is 174
+2021/07/12 21:12:10 ===leader is me 4 == , now logs len is 139
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 134
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 175
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 140
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 135
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 176
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 141
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 136
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 177
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 142
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 137
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 178
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 143
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 138
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 179
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 144
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 139
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 180
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 145
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 140
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 181
+2021/07/12 21:12:11 ===leader is me 4 == , now logs len is 146
+2021/07/12 21:12:11 leader term is 13 and my term is 18
+2021/07/12 21:12:11 4 : 1
+2021/07/12 21:12:11 0 not vote to 4 in term 19 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:11 3 not vote to 4 in term 19 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:11 ========== {18 false 0 0} ======== me is 4 term is 19 receive from 0
+2021/07/12 21:12:11 ========== {18 false 0 0} ======== me is 4 term is 19 receive from 3
+2021/07/12 21:12:11 4 receive 1 vote and status is 0 in term 19 and now term is 19
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 141
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 182
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 142
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 183
+2021/07/12 21:12:11 0 : 1
+2021/07/12 21:12:11 3 vote to 0 in term 20 reply is &{19 true 0 0}
+2021/07/12 21:12:11 ========== {19 true 0 0} ======== me is 0 term is 20 receive from 3
+2021/07/12 21:12:11 0 : 2
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 143
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 184
+2021/07/12 21:12:11 0 receive 2 vote and status is 0 in term 20 and now term is 20
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 144
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 185
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 145
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 186
+2021/07/12 21:12:11 ===leader is me 1 == , now logs len is 146
+2021/07/12 21:12:11 ===leader is me 2 == , now logs len is 187
+2021/07/12 21:12:11 4 : 1
+2021/07/12 21:12:11 4 receive 1 vote and status is 0 in term 20 and now term is 20
+2021/07/12 21:12:12 3 : 1
+2021/07/12 21:12:12 0 : 1
+2021/07/12 21:12:12 ========== {21 false 0 0} ======== me is 0 term is 21 receive from 3
+2021/07/12 21:12:12 ========== {21 false 0 0} ======== me is 3 term is 21 receive from 0
+2021/07/12 21:12:12 3 receive 1 vote and status is 0 in term 21 and now term is 21
+2021/07/12 21:12:12 0 receive 1 vote and status is 0 in term 21 and now term is 21
+2021/07/12 21:12:12 4 : 1
+2021/07/12 21:12:12 4 receive 1 vote and status is 0 in term 21 and now term is 21
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 147
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 188
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 148
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 189
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 149
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 190
+2021/07/12 21:12:12 leader term is 18 and my term is 21
+2021/07/12 21:12:12 leader term is 18 and my term is 21
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 150
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 191
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 151
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 192
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 152
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 193
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 153
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 194
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 154
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 195
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 155
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 196
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 156
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 197
+2021/07/12 21:12:12 3 : 1
+2021/07/12 21:12:12 0 vote to 3 in term 22 reply is &{21 true 0 0}
+2021/07/12 21:12:12 4 vote to 3 in term 22 reply is &{21 true 0 0}
+2021/07/12 21:12:12 3 receive 1 vote and status is 0 in term 22 and now term is 22
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 157
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 198
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 158
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 199
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 159
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 200
+2021/07/12 21:12:12 ========== {21 true 0 0} ======== me is 3 term is 22 receive from 0
+2021/07/12 21:12:12 4 : 1
+2021/07/12 21:12:12 3 not vote to 4 in term 23 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:12 0 not vote to 4 in term 23 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:12 0 : 1
+2021/07/12 21:12:12 3 : 1
+2021/07/12 21:12:12 4 vote to 3 in term 24 reply is &{23 true 0 0}
+2021/07/12 21:12:12 4 receive 1 vote and status is 0 in term 23 and now term is 24
+2021/07/12 21:12:12 3 receive 1 vote and status is 0 in term 24 and now term is 24
+2021/07/12 21:12:12 0 receive 1 vote and status is 0 in term 24 and now term is 24
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 160
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 201
+2021/07/12 21:12:12 ========== {23 true 0 0} ======== me is 3 term is 24 receive from 4
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 161
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 202
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 162
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 203
+2021/07/12 21:12:12 ===leader is me 1 == , now logs len is 163
+2021/07/12 21:12:12 ===leader is me 2 == , now logs len is 204
+2021/07/12 21:12:12 4 : 1
+2021/07/12 21:12:12 0 not vote to 4 in term 25 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:12 ========== {24 false 0 0} ======== me is 4 term is 25 receive from 0
+2021/07/12 21:12:12 3 not vote to 4 in term 25 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:12 0 : 1
+2021/07/12 21:12:12 3 : 1
+2021/07/12 21:12:13 ========== {21 true 0 0} ======== me is 3 term is 22 receive from 4
+2021/07/12 21:12:13 4 vote to 3 in term 26 reply is &{25 true 0 0}
+2021/07/12 21:12:13 4 receive 1 vote and status is 0 in term 25 and now term is 26
+2021/07/12 21:12:13 0 receive 1 vote and status is 0 in term 26 and now term is 26
+2021/07/12 21:12:13 3 receive 1 vote and status is 0 in term 26 and now term is 26
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 164
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 205
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 165
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 206
+2021/07/12 21:12:13 ========== {22 false 0 0} ======== me is 4 term is 23 receive from 3
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 166
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 207
+2021/07/12 21:12:13 ========== {24 false 0 0} ======== me is 3 term is 24 receive from 0
+2021/07/12 21:12:13 ========== {26 false 0 0} ======== me is 3 term is 26 receive from 0
+2021/07/12 21:12:13 ========== {22 false 0 0} ======== me is 4 term is 23 receive from 0
+2021/07/12 21:12:13 ========== {24 false 0 0} ======== me is 0 term is 24 receive from 3
+2021/07/12 21:12:13 0 : 1
+2021/07/12 21:12:13 4 vote to 0 in term 27 reply is &{26 true 0 0}
+2021/07/12 21:12:13 ========== {26 true 0 0} ======== me is 0 term is 27 receive from 4
+2021/07/12 21:12:13 0 : 2
+2021/07/12 21:12:13 3 vote to 0 in term 27 reply is &{26 true 0 0}
+2021/07/12 21:12:13 ========== {26 false 0 0} ======== me is 0 term is 26 receive from 4
+2021/07/12 21:12:13 ========== {24 false 0 0} ======== me is 4 term is 25 receive from 3
+2021/07/12 21:12:13 0 receive 2 vote and status is 0 in term 27 and now term is 27
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 167
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 208
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 168
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 209
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 169
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 210
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 170
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 211
+2021/07/12 21:12:13 ========== {26 false 0 0} ======== me is 0 term is 26 receive from 3
+2021/07/12 21:12:13 0 : 1
+2021/07/12 21:12:13 3 vote to 0 in term 28 reply is &{27 true 0 0}
+2021/07/12 21:12:13 4 vote to 0 in term 28 reply is &{27 true 0 0}
+2021/07/12 21:12:13 0 receive 1 vote and status is 0 in term 28 and now term is 28
+2021/07/12 21:12:13 ========== {26 true 0 0} ======== me is 0 term is 27 receive from 3
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 171
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 212
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 172
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 213
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 173
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 214
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 174
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 215
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 175
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 216
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 176
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 217
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 177
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 218
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 178
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 219
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 179
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 220
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 180
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 221
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 181
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 222
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 182
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 223
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 183
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 224
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 184
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 225
+2021/07/12 21:12:13 ========== {24 false 0 0} ======== me is 0 term is 24 receive from 4
+2021/07/12 21:12:13 ========== {27 true 0 0} ======== me is 0 term is 28 receive from 4
+2021/07/12 21:12:13 3 : 1
+2021/07/12 21:12:13 0 : 1
+2021/07/12 21:12:13 3 : 1
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 185
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 226
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 186
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 227
+2021/07/12 21:12:13 ========== {29 false 0 0} ======== me is 3 term is 29 receive from 0
+2021/07/12 21:12:13 ========== {29 false 0 0} ======== me is 0 term is 29 receive from 3
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 187
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 228
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 188
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 229
+2021/07/12 21:12:13 4 vote to 0 in term 29 reply is &{28 true 0 0}
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 189
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 230
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 190
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 231
+2021/07/12 21:12:13 3 receive 1 vote and status is 0 in term 29 and now term is 29
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 191
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 232
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 192
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 233
+2021/07/12 21:12:13 0 receive 1 vote and status is 0 in term 29 and now term is 29
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 193
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 234
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 194
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 235
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 195
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 236
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 196
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 237
+2021/07/12 21:12:13 ===leader is me 1 == , now logs len is 197
+2021/07/12 21:12:13 ===leader is me 2 == , now logs len is 238
+2021/07/12 21:12:14 ========== {27 true 0 0} ======== me is 0 term is 28 receive from 3
+2021/07/12 21:12:14 3 : 1
+2021/07/12 21:12:14 0 vote to 3 in term 30 reply is &{29 true 0 0}
+2021/07/12 21:12:14 4 vote to 3 in term 30 reply is &{29 true 0 0}
+2021/07/12 21:12:14 3 receive 1 vote and status is 0 in term 30 and now term is 30
+2021/07/12 21:12:14 ========== {25 true 0 0} ======== me is 3 term is 26 receive from 4
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 198
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 239
+2021/07/12 21:12:14 ========== {29 true 0 0} ======== me is 3 term is 30 receive from 4
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 199
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 240
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 200
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 241
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 201
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 242
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 202
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 243
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 203
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 244
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 204
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 245
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 205
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 246
+2021/07/12 21:12:14 ========== {28 true 0 0} ======== me is 0 term is 29 receive from 4
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 206
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 247
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 207
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 248
+2021/07/12 21:12:14 0 : 1
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 208
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 249
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 209
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 250
+2021/07/12 21:12:14 4 vote to 0 in term 31 reply is &{30 true 0 0}
+2021/07/12 21:12:14 ========== {30 true 0 0} ======== me is 0 term is 31 receive from 4
+2021/07/12 21:12:14 0 : 2
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 210
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 251
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 211
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 252
+2021/07/12 21:12:14 3 vote to 0 in term 31 reply is &{30 true 0 0}
+2021/07/12 21:12:14 0 : 2
+2021/07/12 21:12:14 0 receive 2 vote and status is 0 in term 31 and now term is 31
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 212
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 253
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 213
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 254
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 214
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 255
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 215
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 256
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 216
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 257
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 217
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 258
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 218
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 259
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 219
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 260
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 220
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 261
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 221
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 262
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 222
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 263
+2021/07/12 21:12:14 4 : 1
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 223
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 264
+2021/07/12 21:12:14 3 not vote to 4 in term 32 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:14 0 not vote to 4 in term 32 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 224
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 265
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 225
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 266
+2021/07/12 21:12:14 ===leader is me 1 == , now logs len is 226
+2021/07/12 21:12:14 3 : 1
+2021/07/12 21:12:14 ===leader is me 2 == , now logs len is 267
+2021/07/12 21:12:14 4 receive 1 vote and status is 0 in term 32 and now term is 32
+2021/07/12 21:12:14 0 vote to 3 in term 33 reply is &{32 true 0 0}
+2021/07/12 21:12:14 3 : 1
+2021/07/12 21:12:14 3 : 1
+2021/07/12 21:12:14 3 receive 1 vote and status is 0 in term 33 and now term is 33
+2021/07/12 21:12:14 ========== {30 true 0 0} ======== me is 0 term is 31 receive from 3
+2021/07/12 21:12:15 ========== {29 true 0 0} ======== me is 3 term is 30 receive from 0
+2021/07/12 21:12:15 0 : 1
+2021/07/12 21:12:15 4 vote to 0 in term 34 reply is &{32 true 0 0}
+2021/07/12 21:12:15 0 : 1
+2021/07/12 21:12:15 3 vote to 0 in term 34 reply is &{33 true 0 0}
+2021/07/12 21:12:15 0 receive 1 vote and status is 0 in term 34 and now term is 34
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 227
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 268
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 228
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 269
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 229
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 270
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 230
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 271
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 231
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 272
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 232
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 273
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 233
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 274
+2021/07/12 21:12:15 ========== {31 false 0 0} ======== me is 4 term is 32 receive from 0
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 234
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 275
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 235
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 276
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 236
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 277
+2021/07/12 21:12:15 4 : 1
+2021/07/12 21:12:15 0 not vote to 4 in term 35 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:15 ========== {34 false 0 0} ======== me is 4 term is 35 receive from 0
+2021/07/12 21:12:15 0 : 1
+2021/07/12 21:12:15 3 : 1
+2021/07/12 21:12:15 candidate 3 term is 35 and my term is 36 and votedFor is 0
+2021/07/12 21:12:15 ========== {35 false 0 0} ======== me is 4 term is 35 receive from 3
+2021/07/12 21:12:15 ========== {36 false 0 0} ======== me is 3 term is 35 receive from 0
+2021/07/12 21:12:15 3 : 1
+2021/07/12 21:12:15 3 : 1
+2021/07/12 21:12:15 3 vote to 0 in term 36 reply is &{36 true 0 0}
+2021/07/12 21:12:15 4 vote to 0 in term 36 reply is &{35 true 0 0}
+2021/07/12 21:12:15 ========== {35 true 0 0} ======== me is 0 term is 36 receive from 4
+2021/07/12 21:12:15 0 : 2
+2021/07/12 21:12:15 4 receive 1 vote and status is 0 in term 35 and now term is 36
+2021/07/12 21:12:15 3 receive 1 vote and status is 0 in term 35 and now term is 36
+2021/07/12 21:12:15 0 receive 2 vote and status is 0 in term 36 and now term is 36
+2021/07/12 21:12:15 0 : 1
+2021/07/12 21:12:15 3 : 1
+2021/07/12 21:12:15 0 : 1
+2021/07/12 21:12:15 0 receive 1 vote and status is 0 in term 37 and now term is 37
+2021/07/12 21:12:15 4 vote to 3 in term 37 reply is &{36 true 0 0}
+2021/07/12 21:12:15 3 receive 1 vote and status is 0 in term 37 and now term is 37
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 237
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 278
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 238
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 279
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 239
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 280
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 240
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 281
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 241
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 282
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 242
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 283
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 243
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 284
+2021/07/12 21:12:15 ===leader is me 1 == , now logs len is 244
+2021/07/12 21:12:15 ===leader is me 2 == , now logs len is 285
+2021/07/12 21:12:15 ========== {36 true 0 0} ======== me is 0 term is 36 receive from 3
+2021/07/12 21:12:15 ========== {37 false 0 0} ======== me is 0 term is 37 receive from 3
+2021/07/12 21:12:16 0 : 1
+2021/07/12 21:12:16 ========== {31 false 0 0} ======== me is 4 term is 32 receive from 3
+2021/07/12 21:12:16 3 vote to 0 in term 38 reply is &{37 true 0 0}
+2021/07/12 21:12:16 ========== {37 true 0 0} ======== me is 0 term is 38 receive from 3
+2021/07/12 21:12:16 0 : 2
+2021/07/12 21:12:16 ========== {36 true 0 0} ======== me is 3 term is 37 receive from 4
+2021/07/12 21:12:16 0 : 2
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 245
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 286
+2021/07/12 21:12:16 0 receive 2 vote and status is 0 in term 38 and now term is 38
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 246
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 287
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 247
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 288
+2021/07/12 21:12:16 ========== {33 true 0 0} ======== me is 0 term is 34 receive from 3
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 248
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 289
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 249
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 290
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 250
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 291
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 251
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 292
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 252
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 293
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 253
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 294
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 254
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 295
+2021/07/12 21:12:16 4 : 1
+2021/07/12 21:12:16 4 : 1
+2021/07/12 21:12:16 4 receive 1 vote and status is 0 in term 38 and now term is 38
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 255
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 296
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 256
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 297
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 257
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 298
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 258
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 299
+2021/07/12 21:12:16 3 : 1
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 259
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 300
+2021/07/12 21:12:16 0 vote to 3 in term 39 reply is &{38 true 0 0}
+2021/07/12 21:12:16 ========== {38 true 0 0} ======== me is 3 term is 39 receive from 0
+2021/07/12 21:12:16 3 : 2
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 260
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 301
+2021/07/12 21:12:16 3 : 2
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 261
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 302
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 262
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 303
+2021/07/12 21:12:16 3 receive 2 vote and status is 0 in term 39 and now term is 39
+2021/07/12 21:12:16 4 : 1
+2021/07/12 21:12:16 4 : 1
+2021/07/12 21:12:16 4 receive 1 vote and status is 0 in term 39 and now term is 39
+2021/07/12 21:12:16 0 : 1
+2021/07/12 21:12:16 3 vote to 0 in term 40 reply is &{39 true 0 0}
+2021/07/12 21:12:16 4 vote to 0 in term 40 reply is &{39 true 0 0}
+2021/07/12 21:12:16 0 receive 1 vote and status is 0 in term 40 and now term is 40
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 263
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 304
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 264
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 305
+2021/07/12 21:12:16 ========== {37 false 0 0} ======== me is 3 term is 37 receive from 0
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 265
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 306
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 266
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 307
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 267
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 308
+2021/07/12 21:12:16 ========== {39 false 0 0} ======== me is 4 term is 39 receive from 3
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 268
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 309
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 269
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 310
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 270
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 311
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 271
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 312
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 272
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 313
+2021/07/12 21:12:16 ========== {38 false 0 0} ======== me is 4 term is 38 receive from 3
+2021/07/12 21:12:16 0 : 1
+2021/07/12 21:12:16 0 : 1
+2021/07/12 21:12:16 3 vote to 0 in term 41 reply is &{40 true 0 0}
+2021/07/12 21:12:16 4 : 1
+2021/07/12 21:12:16 0 receive 1 vote and status is 0 in term 41 and now term is 41
+2021/07/12 21:12:16 4 : 1
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 273
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 314
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 274
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 315
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 275
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 316
+2021/07/12 21:12:16 ===leader is me 1 == , now logs len is 276
+2021/07/12 21:12:16 ===leader is me 2 == , now logs len is 317
+2021/07/12 21:12:16 4 receive 1 vote and status is 0 in term 41 and now term is 41
+2021/07/12 21:12:17 0 : 1
+2021/07/12 21:12:17 3 vote to 0 in term 42 reply is &{41 true 0 0}
+2021/07/12 21:12:17 0 : 1
+2021/07/12 21:12:17 4 vote to 0 in term 42 reply is &{41 true 0 0}
+2021/07/12 21:12:17 ========== {39 true 0 0} ======== me is 0 term is 40 receive from 3
+2021/07/12 21:12:17 0 receive 1 vote and status is 0 in term 42 and now term is 42
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 277
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 318
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 278
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 319
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 279
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 320
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 280
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 321
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 281
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 322
+2021/07/12 21:12:17 0 : 1
+2021/07/12 21:12:17 4 vote to 0 in term 43 reply is &{42 true 0 0}
+2021/07/12 21:12:17 ========== {42 true 0 0} ======== me is 0 term is 43 receive from 4
+2021/07/12 21:12:17 0 : 2
+2021/07/12 21:12:17 0 : 2
+2021/07/12 21:12:17 0 receive 2 vote and status is 0 in term 43 and now term is 43
+2021/07/12 21:12:17 3 : 1
+2021/07/12 21:12:17 3 receive 1 vote and status is 0 in term 43 and now term is 43
+2021/07/12 21:12:17 ========== {39 true 0 0} ======== me is 0 term is 40 receive from 4
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 282
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 323
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 283
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 324
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 284
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 325
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 285
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 326
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 286
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 327
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 287
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 328
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 288
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 329
+2021/07/12 21:12:17 4 : 1
+2021/07/12 21:12:17 3 not vote to 4 in term 44 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:17 0 not vote to 4 in term 44 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:17 0 : 1
+2021/07/12 21:12:17 3 vote to 0 in term 45 reply is &{44 true 0 0}
+2021/07/12 21:12:17 4 vote to 0 in term 45 reply is &{44 true 0 0}
+2021/07/12 21:12:17 0 : 1
+2021/07/12 21:12:17 4 receive 1 vote and status is 0 in term 44 and now term is 45
+2021/07/12 21:12:17 0 receive 1 vote and status is 0 in term 45 and now term is 45
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 289
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 330
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 290
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 331
+2021/07/12 21:12:17 ===leader is me 1 == , now logs len is 291
+2021/07/12 21:12:17 ===leader is me 2 == , now logs len is 332
+2021/07/12 21:12:17 ========== {40 true 0 0} ======== me is 0 term is 41 receive from 3
+2021/07/12 21:12:18 0 : 1
+2021/07/12 21:12:18 4 vote to 0 in term 46 reply is &{45 true 0 0}
+2021/07/12 21:12:18 ========== {41 true 0 0} ======== me is 0 term is 42 receive from 4
+2021/07/12 21:12:18 3 vote to 0 in term 46 reply is &{45 true 0 0}
+2021/07/12 21:12:18 ========== {45 true 0 0} ======== me is 0 term is 46 receive from 3
+2021/07/12 21:12:18 0 : 2
+2021/07/12 21:12:18 0 receive 2 vote and status is 0 in term 46 and now term is 46
+2021/07/12 21:12:18 ========== {41 false 0 0} ======== me is 4 term is 41 receive from 3
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 292
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 333
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 293
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 334
+2021/07/12 21:12:18 0 : 1
+2021/07/12 21:12:18 4 vote to 0 in term 47 reply is &{46 true 0 0}
+2021/07/12 21:12:18 0 : 1
+2021/07/12 21:12:18 0 receive 1 vote and status is 0 in term 47 and now term is 47
+2021/07/12 21:12:18 3 : 1
+2021/07/12 21:12:18 ========== {43 false 0 0} ======== me is 3 term is 43 receive from 4
+2021/07/12 21:12:18 3 receive 1 vote and status is 0 in term 47 and now term is 47
+2021/07/12 21:12:18 ========== {44 true 0 0} ======== me is 0 term is 45 receive from 3
+2021/07/12 21:12:18 4 : 1
+2021/07/12 21:12:18 3 not vote to 4 in term 48 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:18 ========== {45 true 0 0} ======== me is 0 term is 46 receive from 4
+2021/07/12 21:12:18 0 not vote to 4 in term 48 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 294
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 335
+2021/07/12 21:12:18 4 receive 1 vote and status is 0 in term 48 and now term is 48
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 295
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 336
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 296
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 337
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 297
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 338
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 298
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 339
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 299
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 340
+2021/07/12 21:12:18 0 : 1
+2021/07/12 21:12:18 3 vote to 0 in term 49 reply is &{48 true 0 0}
+2021/07/12 21:12:18 4 vote to 0 in term 49 reply is &{48 true 0 0}
+2021/07/12 21:12:18 ========== {48 true 0 0} ======== me is 0 term is 49 receive from 4
+2021/07/12 21:12:18 0 : 2
+2021/07/12 21:12:18 ========== {43 false 0 0} ======== me is 4 term is 44 receive from 3
+2021/07/12 21:12:18 0 receive 2 vote and status is 0 in term 49 and now term is 49
+2021/07/12 21:12:18 ========== {47 false 0 0} ======== me is 4 term is 48 receive from 0
+2021/07/12 21:12:18 ========== {47 false 0 0} ======== me is 3 term is 47 receive from 4
+2021/07/12 21:12:18 ========== {47 false 0 0} ======== me is 4 term is 48 receive from 3
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 300
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 341
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 301
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 342
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 302
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 343
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 303
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 344
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 304
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 345
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 305
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 346
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 306
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 347
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 307
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 348
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 308
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 349
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 309
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 350
+2021/07/12 21:12:18 ===leader is me 1 == , now logs len is 310
+2021/07/12 21:12:18 ===leader is me 2 == , now logs len is 351
+2021/07/12 21:12:18 0 : 1
+2021/07/12 21:12:18 3 vote to 0 in term 50 reply is &{49 true 0 0}
+2021/07/12 21:12:18 ========== {49 true 0 0} ======== me is 0 term is 50 receive from 3
+2021/07/12 21:12:18 0 : 2
+2021/07/12 21:12:19 4 vote to 0 in term 50 reply is &{49 true 0 0}
+2021/07/12 21:12:19 0 receive 2 vote and status is 0 in term 50 and now term is 50
+2021/07/12 21:12:19 ========== {43 false 0 0} ======== me is 4 term is 44 receive from 0
+2021/07/12 21:12:19 ========== {47 false 0 0} ======== me is 3 term is 47 receive from 0
+2021/07/12 21:12:19 ========== {46 true 0 0} ======== me is 0 term is 47 receive from 4
+2021/07/12 21:12:19 0 : 1
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 311
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 352
+2021/07/12 21:12:19 4 : 1
+2021/07/12 21:12:19 3 not vote to 4 in term 51 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:19 0 : 1
+2021/07/12 21:12:19 3 : 1
+2021/07/12 21:12:19 0 receive 1 vote and status is 0 in term 51 and now term is 51
+2021/07/12 21:12:19 0 vote to 3 in term 52 reply is &{51 true 0 0}
+2021/07/12 21:12:19 4 receive 1 vote and status is 0 in term 51 and now term is 51
+2021/07/12 21:12:19 4 vote to 3 in term 52 reply is &{51 true 0 0}
+2021/07/12 21:12:19 3 receive 1 vote and status is 0 in term 52 and now term is 52
+2021/07/12 21:12:19 ========== {43 false 0 0} ======== me is 3 term is 43 receive from 0
+2021/07/12 21:12:19 ========== {49 true 0 0} ======== me is 0 term is 50 receive from 4
+2021/07/12 21:12:19 ========== {50 false 0 0} ======== me is 4 term is 51 receive from 3
+2021/07/12 21:12:19 3 : 1
+2021/07/12 21:12:19 0 : 1
+2021/07/12 21:12:19 4 vote to 3 in term 53 reply is &{52 true 0 0}
+2021/07/12 21:12:19 ========== {48 true 0 0} ======== me is 0 term is 49 receive from 3
+2021/07/12 21:12:19 3 receive 1 vote and status is 0 in term 53 and now term is 53
+2021/07/12 21:12:19 0 receive 1 vote and status is 0 in term 53 and now term is 53
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 312
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 353
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 313
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 354
+2021/07/12 21:12:19 4 : 1
+2021/07/12 21:12:19 3 not vote to 4 in term 54 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:19 4 : 1
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 314
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 355
+2021/07/12 21:12:19 0 not vote to 4 in term 54 and my lastLogTerm is 18 len is 135 args lastterm is 13  len is 145
+2021/07/12 21:12:19 ========== {53 false 0 0} ======== me is 4 term is 54 receive from 0
+2021/07/12 21:12:19 0 : 1
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 315
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 356
+2021/07/12 21:12:19 ========== {51 false 0 0} ======== me is 4 term is 51 receive from 0
+2021/07/12 21:12:19 4 vote to 0 in term 55 reply is &{54 true 0 0}
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 316
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 357
+2021/07/12 21:12:19 3 vote to 0 in term 55 reply is &{54 true 0 0}
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 317
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 358
+2021/07/12 21:12:19 ========== {52 true 0 0} ======== me is 3 term is 53 receive from 4
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 318
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 359
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 319
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 360
+2021/07/12 21:12:19 4 receive 1 vote and status is 0 in term 54 and now term is 55
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 320
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 361
+2021/07/12 21:12:19 0 receive 1 vote and status is 0 in term 55 and now term is 55
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 321
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 362
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 322
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 363
+2021/07/12 21:12:19 ========== {53 false 0 0} ======== me is 3 term is 53 receive from 0
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 323
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 364
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 324
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 365
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 325
+2021/07/12 21:12:19 ===leader is me 2 == , now logs len is 366
+2021/07/12 21:12:19 ===leader is me 1 == , now logs len is 326
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 367
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 327
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 368
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 328
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 369
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 329
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 370
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 330
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 371
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 331
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 372
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 332
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 373
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 333
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 374
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 334
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 375
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 335
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 376
+2021/07/12 21:12:20 0 : 1
+2021/07/12 21:12:20 3 vote to 0 in term 56 reply is &{55 true 0 0}
+2021/07/12 21:12:20 ========== {55 true 0 0} ======== me is 0 term is 56 receive from 3
+2021/07/12 21:12:20 0 : 2
+2021/07/12 21:12:20 4 vote to 0 in term 56 reply is &{55 true 0 0}
+2021/07/12 21:12:20 0 receive 2 vote and status is 0 in term 56 and now term is 56
+2021/07/12 21:12:20 ========== {51 true 0 0} ======== me is 3 term is 52 receive from 4
+2021/07/12 21:12:20 ========== {53 false 0 0} ======== me is 0 term is 53 receive from 3
+2021/07/12 21:12:20 ========== {55 true 0 0} ======== me is 0 term is 56 receive from 4
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 336
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 377
+2021/07/12 21:12:20 ========== {54 true 0 0} ======== me is 0 term is 55 receive from 4
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 337
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 378
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 338
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 379
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 339
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 380
+2021/07/12 21:12:20 3 : 1
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 340
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 381
+2021/07/12 21:12:20 4 vote to 3 in term 57 reply is &{56 true 0 0}
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 341
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 382
+2021/07/12 21:12:20 ========== {51 true 0 0} ======== me is 3 term is 52 receive from 0
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 342
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 383
+2021/07/12 21:12:20 0 vote to 3 in term 57 reply is &{56 true 0 0}
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 343
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 384
+2021/07/12 21:12:20 ========== {51 false 0 0} ======== me is 0 term is 51 receive from 4
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 344
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 385
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 345
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 386
+2021/07/12 21:12:20 3 receive 1 vote and status is 0 in term 57 and now term is 57
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 346
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 387
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 347
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 388
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 348
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 389
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 349
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 390
+2021/07/12 21:12:20 ========== {53 false 0 0} ======== me is 0 term is 53 receive from 4
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 350
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 391
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 351
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 392
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 352
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 393
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 353
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 394
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 354
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 395
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 355
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 396
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 356
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 397
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 357
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 398
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 358
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 399
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 359
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 400
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 360
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 401
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 361
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 402
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 362
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 403
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 363
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 404
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 364
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 405
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 365
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 406
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 366
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 407
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 367
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 408
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 368
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 409
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 369
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 410
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 370
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 411
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 371
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 412
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 372
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 413
+2021/07/12 21:12:20 3 : 1
+2021/07/12 21:12:20 0 vote to 3 in term 58 reply is &{57 true 0 0}
+2021/07/12 21:12:20 ========== {57 true 0 0} ======== me is 3 term is 58 receive from 0
+2021/07/12 21:12:20 3 : 2
+2021/07/12 21:12:20 4 vote to 3 in term 58 reply is &{57 true 0 0}
+2021/07/12 21:12:20 ========== {57 true 0 0} ======== me is 3 term is 58 receive from 4
+2021/07/12 21:12:20 3 : 3
+2021/07/12 21:12:20 3 receive 3 vote and status is 2 in term 58 and now term is 58
+2021/07/12 21:12:20 ========== {54 true 0 0} ======== me is 0 term is 55 receive from 3
+2021/07/12 21:12:20 ===leader is me 1 == , now logs len is 373
+2021/07/12 21:12:20 ===leader is me 2 == , now logs len is 414
+2021/07/12 21:12:20 ===leader is me 3 == , now logs len is 137
+2021/07/12 21:12:20 ========== {56 true 0 0} ======== me is 3 term is 57 receive from 0
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 374
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 415
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 138
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 375
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 416
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 139
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 376
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 417
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 140
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 377
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 418
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 141
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 378
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 419
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 142
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 379
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 420
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 143
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 380
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 421
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 144
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 381
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 422
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 145
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 382
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 423
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 146
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 383
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 424
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 147
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 384
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 425
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 148
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 385
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 426
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 149
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 386
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 427
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 150
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 387
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 428
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 151
+2021/07/12 21:12:21 leader term is 2 and my term is 58
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 388
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 429
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 152
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 389
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 430
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 153
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 390
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 431
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 154
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 391
+2021/07/12 21:12:21 ===leader is me 2 == , now logs len is 432
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 155
+2021/07/12 21:12:21 leader term is 2 and my term is 58
+2021/07/12 21:12:21 ========== {56 true 0 0} ======== me is 3 term is 57 receive from 4
+2021/07/12 21:12:21 0 : 1
+2021/07/12 21:12:21 4 vote to 0 in term 59 reply is &{58 true 0 0}
+2021/07/12 21:12:21 0 receive 1 vote and status is 0 in term 59 and now term is 59
+2021/07/12 21:12:21 2 : 1
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 392
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 156
+2021/07/12 21:12:21 2 receive 1 vote and status is 0 in term 59 and now term is 59
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 393
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 157
+2021/07/12 21:12:21 ===leader is me 1 == , now logs len is 394
+2021/07/12 21:12:21 ===leader is me 3 == , now logs len is 158
+2021/07/12 21:12:21 leader term is 18 and my term is 59
+2021/07/12 21:12:21 leader term is 18 and my term is 59
+2021/07/12 21:12:21 ========== {58 true 0 0} ======== me is 0 term is 59 receive from 4
+2021/07/12 21:12:21 4 : 1
+2021/07/12 21:12:21 1 not vote to 4 in term 60 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:21 ========== {59 false 0 0} ======== me is 4 term is 60 receive from 1
+2021/07/12 21:12:21 4 : 1
+2021/07/12 21:12:21 0 not vote to 4 in term 60 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:21 ========== {59 false 0 0} ======== me is 4 term is 60 receive from 0
+2021/07/12 21:12:21 1 : 1
+2021/07/12 21:12:21 4 vote to 1 in term 61 reply is &{60 true 0 0}
+2021/07/12 21:12:21 ========== {60 true 0 0} ======== me is 1 term is 61 receive from 4
+2021/07/12 21:12:21 1 : 2
+2021/07/12 21:12:21 0 : 1
+2021/07/12 21:12:21 1 : 2
+2021/07/12 21:12:21 4 receive 1 vote and status is 0 in term 60 and now term is 61
+2021/07/12 21:12:21 1 receive 2 vote and status is 0 in term 61 and now term is 61
+2021/07/12 21:12:21 0 receive 1 vote and status is 0 in term 61 and now term is 61
+2021/07/12 21:12:21 2 : 1
+2021/07/12 21:12:21 2 : 1
+2021/07/12 21:12:21 2 receive 1 vote and status is 0 in term 60 and now term is 60
+2021/07/12 21:12:22 0 : 1
+2021/07/12 21:12:22 4 vote to 0 in term 62 reply is &{61 true 0 0}
+2021/07/12 21:12:22 ========== {61 true 0 0} ======== me is 0 term is 62 receive from 4
+2021/07/12 21:12:22 0 : 2
+2021/07/12 21:12:22 1 vote to 0 in term 62 reply is &{61 true 0 0}
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 159
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 160
+2021/07/12 21:12:22 0 receive 2 vote and status is 0 in term 62 and now term is 62
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 161
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 162
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 163
+2021/07/12 21:12:22 ========== {61 false 0 0} ======== me is 0 term is 61 receive from 1
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 164
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 165
+2021/07/12 21:12:22 2 : 1
+2021/07/12 21:12:22 2 receive 1 vote and status is 0 in term 61 and now term is 61
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 166
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 167
+2021/07/12 21:12:22 1 : 1
+2021/07/12 21:12:22 0 not vote to 1 in term 63 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:22 ========== {62 false 0 0} ======== me is 1 term is 63 receive from 0
+2021/07/12 21:12:22 4 : 1
+2021/07/12 21:12:22 0 : 1
+2021/07/12 21:12:22 candidate 4 term is 63 and my term is 64 and votedFor is 0
+2021/07/12 21:12:22 4 vote to 0 in term 64 reply is &{63 true 0 0}
+2021/07/12 21:12:22 1 vote to 0 in term 64 reply is &{63 true 0 0}
+2021/07/12 21:12:22 ========== {63 true 0 0} ======== me is 0 term is 64 receive from 1
+2021/07/12 21:12:22 0 : 2
+2021/07/12 21:12:22 4 : 1
+2021/07/12 21:12:22 1 receive 1 vote and status is 0 in term 63 and now term is 64
+2021/07/12 21:12:22 4 receive 1 vote and status is 0 in term 63 and now term is 64
+2021/07/12 21:12:22 0 receive 2 vote and status is 0 in term 64 and now term is 64
+2021/07/12 21:12:22 2 : 1
+2021/07/12 21:12:22 2 receive 1 vote and status is 0 in term 62 and now term is 62
+2021/07/12 21:12:22 ========== {63 true 0 0} ======== me is 0 term is 64 receive from 4
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 168
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 169
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 170
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 171
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 172
+2021/07/12 21:12:22 4 : 1
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 173
+2021/07/12 21:12:22 1 not vote to 4 in term 65 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 174
+2021/07/12 21:12:22 0 not vote to 4 in term 65 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:22 ========== {64 false 0 0} ======== me is 4 term is 65 receive from 0
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 175
+2021/07/12 21:12:22 1 : 1
+2021/07/12 21:12:22 0 not vote to 1 in term 66 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 176
+2021/07/12 21:12:22 ===leader is me 3 == , now logs len is 177
+2021/07/12 21:12:22 1 : 1
+2021/07/12 21:12:22 4 receive 1 vote and status is 0 in term 65 and now term is 65
+2021/07/12 21:12:22 0 : 1
+2021/07/12 21:12:22 4 vote to 0 in term 67 reply is &{65 true 0 0}
+2021/07/12 21:12:22 0 : 1
+2021/07/12 21:12:22 1 receive 1 vote and status is 0 in term 66 and now term is 66
+2021/07/12 21:12:22 1 vote to 0 in term 67 reply is &{66 true 0 0}
+2021/07/12 21:12:22 0 : 1
+2021/07/12 21:12:22 2 : 1
+2021/07/12 21:12:22 0 receive 1 vote and status is 0 in term 67 and now term is 67
+2021/07/12 21:12:22 2 receive 1 vote and status is 0 in term 63 and now term is 63
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 178
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 179
+2021/07/12 21:12:23 ========== {64 false 0 0} ======== me is 4 term is 65 receive from 1
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 180
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 181
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 182
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 183
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 184
+2021/07/12 21:12:23 0 : 1
+2021/07/12 21:12:23 ========== {65 false 0 0} ======== me is 1 term is 66 receive from 0
+2021/07/12 21:12:23 1 : 1
+2021/07/12 21:12:23 ========== {61 false 0 0} ======== me is 0 term is 61 receive from 4
+2021/07/12 21:12:23 4 vote to 0 in term 68 reply is &{67 true 0 0}
+2021/07/12 21:12:23 ========== {68 false 0 0} ======== me is 0 term is 68 receive from 1
+2021/07/12 21:12:23 1 : 1
+2021/07/12 21:12:23 2 : 1
+2021/07/12 21:12:23 0 receive 1 vote and status is 0 in term 68 and now term is 68
+2021/07/12 21:12:23 1 receive 1 vote and status is 0 in term 68 and now term is 68
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 185
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 186
+2021/07/12 21:12:23 2 receive 1 vote and status is 0 in term 64 and now term is 64
+2021/07/12 21:12:23 1 : 1
+2021/07/12 21:12:23 4 vote to 1 in term 69 reply is &{68 true 0 0}
+2021/07/12 21:12:23 0 not vote to 1 in term 69 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:23 1 receive 1 vote and status is 0 in term 69 and now term is 69
+2021/07/12 21:12:23 0 : 1
+2021/07/12 21:12:23 1 vote to 0 in term 70 reply is &{69 true 0 0}
+2021/07/12 21:12:23 4 vote to 0 in term 70 reply is &{69 true 0 0}
+2021/07/12 21:12:23 0 receive 1 vote and status is 0 in term 70 and now term is 70
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 187
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 188
+2021/07/12 21:12:23 ===leader is me 3 == , now logs len is 189
+2021/07/12 21:12:23 2 : 1
+2021/07/12 21:12:23 ========== {64 false 0 0} ======== me is 4 term is 63 receive from 0
+2021/07/12 21:12:23 2 receive 1 vote and status is 0 in term 65 and now term is 65
+2021/07/12 21:12:23 ========== {68 false 0 0} ======== me is 1 term is 68 receive from 4
+2021/07/12 21:12:23 ========== {68 true 0 0} ======== me is 1 term is 69 receive from 4
+2021/07/12 21:12:23 ========== {69 true 0 0} ======== me is 0 term is 70 receive from 1
+2021/07/12 21:12:23 ========== {61 true 0 0} ======== me is 0 term is 62 receive from 1
+2021/07/12 21:12:23 1 : 1
+2021/07/12 21:12:23 0 not vote to 1 in term 71 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:23 0 : 1
+2021/07/12 21:12:23 4 : 1
+2021/07/12 21:12:23 ========== {71 false 0 0} ======== me is 1 term is 71 receive from 4
+2021/07/12 21:12:23 1 vote to 0 in term 72 reply is &{71 true 0 0}
+2021/07/12 21:12:23 candidate 4 term is 71 and my term is 72 and votedFor is 0
+2021/07/12 21:12:23 4 : 1
+2021/07/12 21:12:23 4 vote to 0 in term 72 reply is &{71 true 0 0}
+2021/07/12 21:12:23 candidate 4 term is 71 and my term is 72 and votedFor is 0
+2021/07/12 21:12:23 ========== {69 true 0 0} ======== me is 0 term is 70 receive from 4
+2021/07/12 21:12:23 1 receive 1 vote and status is 0 in term 71 and now term is 72
+2021/07/12 21:12:23 0 receive 1 vote and status is 0 in term 72 and now term is 72
+2021/07/12 21:12:23 4 receive 1 vote and status is 0 in term 71 and now term is 72
+2021/07/12 21:12:23 2 : 1
+2021/07/12 21:12:23 2 receive 1 vote and status is 0 in term 66 and now term is 66
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 190
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 191
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 192
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 193
+2021/07/12 21:12:24 1 : 1
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 194
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 195
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 196
+2021/07/12 21:12:24 4 vote to 1 in term 73 reply is &{72 true 0 0}
+2021/07/12 21:12:24 0 not vote to 1 in term 73 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:24 ========== {72 false 0 0} ======== me is 1 term is 73 receive from 0
+2021/07/12 21:12:24 ========== {67 true 0 0} ======== me is 0 term is 68 receive from 4
+2021/07/12 21:12:24 1 receive 1 vote and status is 0 in term 73 and now term is 73
+2021/07/12 21:12:24 ========== {63 false 0 0} ======== me is 1 term is 63 receive from 4
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 1 vote to 0 in term 74 reply is &{73 true 0 0}
+2021/07/12 21:12:24 ========== {73 true 0 0} ======== me is 0 term is 74 receive from 1
+2021/07/12 21:12:24 0 : 2
+2021/07/12 21:12:24 4 vote to 0 in term 74 reply is &{73 true 0 0}
+2021/07/12 21:12:24 ========== {72 false 0 0} ======== me is 4 term is 71 receive from 0
+2021/07/12 21:12:24 0 receive 2 vote and status is 0 in term 74 and now term is 74
+2021/07/12 21:12:24 2 : 1
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 197
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 198
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 199
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 200
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 201
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 202
+2021/07/12 21:12:24 2 receive 1 vote and status is 0 in term 67 and now term is 67
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 203
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 204
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 205
+2021/07/12 21:12:24 ========== {70 false 0 0} ======== me is 1 term is 71 receive from 0
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 206
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 207
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 208
+2021/07/12 21:12:24 ========== {72 true 0 0} ======== me is 1 term is 73 receive from 4
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 209
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 210
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 211
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 212
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 213
+2021/07/12 21:12:24 4 vote to 0 in term 75 reply is &{74 true 0 0}
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 214
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 215
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 216
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 217
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 218
+2021/07/12 21:12:24 0 receive 1 vote and status is 0 in term 75 and now term is 75
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 219
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 220
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 221
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 222
+2021/07/12 21:12:24 1 : 1
+2021/07/12 21:12:24 ========== {75 false 0 0} ======== me is 1 term is 75 receive from 4
+2021/07/12 21:12:24 1 receive 1 vote and status is 0 in term 75 and now term is 75
+2021/07/12 21:12:24 2 : 1
+2021/07/12 21:12:24 2 receive 1 vote and status is 0 in term 68 and now term is 68
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 1 vote to 0 in term 76 reply is &{75 true 0 0}
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 0 receive 1 vote and status is 0 in term 76 and now term is 76
+2021/07/12 21:12:24 4 : 1
+2021/07/12 21:12:24 4 : 1
+2021/07/12 21:12:24 ========== {76 false 0 0} ======== me is 4 term is 76 receive from 1
+2021/07/12 21:12:24 4 receive 1 vote and status is 0 in term 76 and now term is 76
+2021/07/12 21:12:24 2 : 1
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 223
+2021/07/12 21:12:24 ===leader is me 3 == , now logs len is 224
+2021/07/12 21:12:24 2 receive 1 vote and status is 0 in term 69 and now term is 69
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:24 1 vote to 0 in term 77 reply is &{76 true 0 0}
+2021/07/12 21:12:24 4 vote to 0 in term 77 reply is &{76 true 0 0}
+2021/07/12 21:12:24 0 : 1
+2021/07/12 21:12:25 0 receive 1 vote and status is 0 in term 77 and now term is 77
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 225
+2021/07/12 21:12:25 ========== {68 false 0 0} ======== me is 1 term is 69 receive from 0
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 226
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 227
+2021/07/12 21:12:25 ========== {73 true 0 0} ======== me is 0 term is 74 receive from 4
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 228
+2021/07/12 21:12:25 2 : 1
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 229
+2021/07/12 21:12:25 ========== {76 true 0 0} ======== me is 0 term is 77 receive from 1
+2021/07/12 21:12:25 2 receive 1 vote and status is 0 in term 70 and now term is 70
+2021/07/12 21:12:25 ========== {75 false 0 0} ======== me is 1 term is 75 receive from 0
+2021/07/12 21:12:25 ========== {71 true 0 0} ======== me is 0 term is 72 receive from 1
+2021/07/12 21:12:25 4 : 1
+2021/07/12 21:12:25 0 not vote to 4 in term 78 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:25 ========== {77 false 0 0} ======== me is 4 term is 78 receive from 0
+2021/07/12 21:12:25 0 : 1
+2021/07/12 21:12:25 4 : 1
+2021/07/12 21:12:25 1 vote to 0 in term 79 reply is &{77 true 0 0}
+2021/07/12 21:12:25 0 : 1
+2021/07/12 21:12:25 4 vote to 0 in term 79 reply is &{78 true 0 0}
+2021/07/12 21:12:25 4 receive 1 vote and status is 0 in term 78 and now term is 79
+2021/07/12 21:12:25 0 receive 1 vote and status is 0 in term 79 and now term is 79
+2021/07/12 21:12:25 2 : 1
+2021/07/12 21:12:25 ========== {71 true 0 0} ======== me is 0 term is 72 receive from 4
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 230
+2021/07/12 21:12:25 2 receive 1 vote and status is 0 in term 71 and now term is 71
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 231
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 232
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 233
+2021/07/12 21:12:25 0 : 1
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 234
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 235
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 236
+2021/07/12 21:12:25 1 vote to 0 in term 80 reply is &{79 true 0 0}
+2021/07/12 21:12:25 ========== {79 true 0 0} ======== me is 0 term is 80 receive from 1
+2021/07/12 21:12:25 0 : 2
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 237
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 238
+2021/07/12 21:12:25 4 vote to 0 in term 80 reply is &{79 true 0 0}
+2021/07/12 21:12:25 0 : 2
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 239
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 240
+2021/07/12 21:12:25 ===leader is me 3 == , now logs len is 241
+2021/07/12 21:12:25 0 receive 2 vote and status is 0 in term 80 and now term is 80
+2021/07/12 21:12:25 ========== {74 true 0 0} ======== me is 0 term is 75 receive from 4
+2021/07/12 21:12:25 0 : 1
+2021/07/12 21:12:25 4 vote to 0 in term 81 reply is &{80 true 0 0}
+2021/07/12 21:12:25 1 vote to 0 in term 81 reply is &{80 true 0 0}
+2021/07/12 21:12:25 2 : 1
+2021/07/12 21:12:25 0 receive 1 vote and status is 0 in term 81 and now term is 81
+2021/07/12 21:12:25 ========== {78 true 0 0} ======== me is 0 term is 79 receive from 4
+2021/07/12 21:12:25 2 receive 1 vote and status is 0 in term 72 and now term is 72
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 242
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 243
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 244
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 245
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 246
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 247
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 248
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 249
+2021/07/12 21:12:26 ========== {80 true 0 0} ======== me is 0 term is 81 receive from 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 250
+2021/07/12 21:12:26 4 : 1
+2021/07/12 21:12:26 0 not vote to 4 in term 82 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 251
+2021/07/12 21:12:26 1 not vote to 4 in term 82 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:26 1 : 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 252
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 253
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 254
+2021/07/12 21:12:26 1 : 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 255
+2021/07/12 21:12:26 4 vote to 1 in term 83 reply is &{82 true 0 0}
+2021/07/12 21:12:26 4 receive 1 vote and status is 0 in term 82 and now term is 83
+2021/07/12 21:12:26 1 receive 1 vote and status is 0 in term 83 and now term is 83
+2021/07/12 21:12:26 0 : 1
+2021/07/12 21:12:26 2 : 1
+2021/07/12 21:12:26 0 receive 1 vote and status is 0 in term 83 and now term is 83
+2021/07/12 21:12:26 2 receive 1 vote and status is 0 in term 73 and now term is 73
+2021/07/12 21:12:26 ========== {81 false 0 0} ======== me is 4 term is 82 receive from 1
+2021/07/12 21:12:26 ========== {80 true 0 0} ======== me is 0 term is 81 receive from 4
+2021/07/12 21:12:26 4 : 1
+2021/07/12 21:12:26 1 not vote to 4 in term 84 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:26 ========== {83 false 0 0} ======== me is 4 term is 84 receive from 1
+2021/07/12 21:12:26 0 not vote to 4 in term 84 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:26 ========== {83 false 0 0} ======== me is 4 term is 84 receive from 0
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 256
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 257
+2021/07/12 21:12:26 2 : 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 258
+2021/07/12 21:12:26 4 receive 1 vote and status is 0 in term 84 and now term is 84
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 259
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 260
+2021/07/12 21:12:26 0 : 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 261
+2021/07/12 21:12:26 1 vote to 0 in term 85 reply is &{84 true 0 0}
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 262
+2021/07/12 21:12:26 ========== {83 false 0 0} ======== me is 0 term is 83 receive from 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 263
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 264
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 265
+2021/07/12 21:12:26 2 receive 1 vote and status is 0 in term 74 and now term is 74
+2021/07/12 21:12:26 4 vote to 0 in term 85 reply is &{84 true 0 0}
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 266
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 267
+2021/07/12 21:12:26 0 receive 1 vote and status is 0 in term 85 and now term is 85
+2021/07/12 21:12:26 ========== {83 false 0 0} ======== me is 0 term is 83 receive from 4
+2021/07/12 21:12:26 ========== {81 false 0 0} ======== me is 4 term is 82 receive from 0
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 268
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 269
+2021/07/12 21:12:26 1 : 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 270
+2021/07/12 21:12:26 2 : 1
+2021/07/12 21:12:26 0 not vote to 1 in term 86 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 271
+2021/07/12 21:12:26 4 vote to 1 in term 86 reply is &{85 true 0 0}
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 272
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 273
+2021/07/12 21:12:26 0 : 1
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 274
+2021/07/12 21:12:26 1 receive 1 vote and status is 0 in term 86 and now term is 86
+2021/07/12 21:12:26 ===leader is me 3 == , now logs len is 275
+2021/07/12 21:12:26 4 vote to 0 in term 87 reply is &{86 true 0 0}
+2021/07/12 21:12:26 1 vote to 0 in term 87 reply is &{86 true 0 0}
+2021/07/12 21:12:26 ========== {86 true 0 0} ======== me is 0 term is 87 receive from 1
+2021/07/12 21:12:26 0 : 2
+2021/07/12 21:12:26 2 receive 1 vote and status is 0 in term 75 and now term is 75
+2021/07/12 21:12:26 0 receive 2 vote and status is 0 in term 87 and now term is 87
+2021/07/12 21:12:27 2 : 1
+2021/07/12 21:12:27 1 : 1
+2021/07/12 21:12:27 0 not vote to 1 in term 88 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:27 ========== {85 true 0 0} ======== me is 1 term is 86 receive from 4
+2021/07/12 21:12:27 4 vote to 1 in term 88 reply is &{87 true 0 0}
+2021/07/12 21:12:27 1 receive 1 vote and status is 0 in term 88 and now term is 88
+2021/07/12 21:12:27 2 receive 1 vote and status is 0 in term 76 and now term is 76
+2021/07/12 21:12:27 ========== {82 true 0 0} ======== me is 1 term is 83 receive from 4
+2021/07/12 21:12:27 0 : 1
+2021/07/12 21:12:27 1 vote to 0 in term 89 reply is &{88 true 0 0}
+2021/07/12 21:12:27 4 vote to 0 in term 89 reply is &{88 true 0 0}
+2021/07/12 21:12:27 ========== {88 true 0 0} ======== me is 0 term is 89 receive from 4
+2021/07/12 21:12:27 0 : 2
+2021/07/12 21:12:27 0 receive 2 vote and status is 0 in term 89 and now term is 89
+2021/07/12 21:12:27 ========== {84 true 0 0} ======== me is 0 term is 85 receive from 4
+2021/07/12 21:12:27 ========== {86 true 0 0} ======== me is 0 term is 87 receive from 4
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 276
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 277
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 278
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 279
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 280
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 281
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 282
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 283
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 284
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 285
+2021/07/12 21:12:27 ========== {87 false 0 0} ======== me is 1 term is 88 receive from 0
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 286
+2021/07/12 21:12:27 ========== {85 false 0 0} ======== me is 1 term is 86 receive from 0
+2021/07/12 21:12:27 4 : 1
+2021/07/12 21:12:27 4 : 1
+2021/07/12 21:12:27 1 : 1
+2021/07/12 21:12:27 0 not vote to 4 in term 90 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:27 ========== {89 false 0 0} ======== me is 4 term is 90 receive from 0
+2021/07/12 21:12:27 1 : 1
+2021/07/12 21:12:27 2 : 1
+2021/07/12 21:12:27 0 not vote to 1 in term 90 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:27 4 receive 1 vote and status is 0 in term 90 and now term is 90
+2021/07/12 21:12:27 1 receive 1 vote and status is 0 in term 90 and now term is 90
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 287
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 288
+2021/07/12 21:12:27 2 receive 1 vote and status is 0 in term 77 and now term is 77
+2021/07/12 21:12:27 0 : 1
+2021/07/12 21:12:27 4 vote to 0 in term 91 reply is &{90 true 0 0}
+2021/07/12 21:12:27 0 : 1
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 289
+2021/07/12 21:12:27 1 vote to 0 in term 91 reply is &{90 true 0 0}
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 290
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 291
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 292
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 293
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 294
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 295
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 296
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 297
+2021/07/12 21:12:27 0 receive 1 vote and status is 0 in term 91 and now term is 91
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 298
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 299
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 300
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 301
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 302
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 303
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 304
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 305
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 306
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 307
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 308
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 309
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 310
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 311
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 312
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 313
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 314
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 315
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 316
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 317
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 318
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 319
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 320
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 321
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 322
+2021/07/12 21:12:27 4 : 1
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 323
+2021/07/12 21:12:27 ========== {88 true 0 0} ======== me is 0 term is 89 receive from 1
+2021/07/12 21:12:27 0 not vote to 4 in term 92 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:27 ========== {91 false 0 0} ======== me is 4 term is 92 receive from 0
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 324
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 325
+2021/07/12 21:12:27 1 not vote to 4 in term 92 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 326
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 327
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 328
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 329
+2021/07/12 21:12:27 ========== {87 true 0 0} ======== me is 1 term is 88 receive from 4
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 330
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 331
+2021/07/12 21:12:27 4 receive 1 vote and status is 0 in term 92 and now term is 92
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 332
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 333
+2021/07/12 21:12:27 2 : 1
+2021/07/12 21:12:27 0 : 1
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 334
+2021/07/12 21:12:27 1 vote to 0 in term 93 reply is &{92 true 0 0}
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 335
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 336
+2021/07/12 21:12:27 2 : 1
+2021/07/12 21:12:27 4 vote to 0 in term 93 reply is &{92 true 0 0}
+2021/07/12 21:12:27 ========== {92 true 0 0} ======== me is 0 term is 93 receive from 4
+2021/07/12 21:12:27 0 : 2
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 337
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 338
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 339
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 340
+2021/07/12 21:12:27 2 receive 1 vote and status is 0 in term 78 and now term is 78
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 341
+2021/07/12 21:12:27 0 receive 2 vote and status is 0 in term 93 and now term is 93
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 342
+2021/07/12 21:12:27 ===leader is me 3 == , now logs len is 343
+2021/07/12 21:12:28 ========== {84 true 0 0} ======== me is 0 term is 85 receive from 1
+2021/07/12 21:12:28 ========== {91 false 0 0} ======== me is 4 term is 92 receive from 1
+2021/07/12 21:12:28 4 : 1
+2021/07/12 21:12:28 1 not vote to 4 in term 94 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:28 0 not vote to 4 in term 94 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:28 4 : 1
+2021/07/12 21:12:28 ========== {92 true 0 0} ======== me is 0 term is 93 receive from 1
+2021/07/12 21:12:28 2 : 1
+2021/07/12 21:12:28 4 receive 1 vote and status is 0 in term 94 and now term is 94
+2021/07/12 21:12:28 2 receive 1 vote and status is 0 in term 79 and now term is 79
+2021/07/12 21:12:28 0 : 1
+2021/07/12 21:12:28 4 vote to 0 in term 95 reply is &{94 true 0 0}
+2021/07/12 21:12:28 ========== {94 true 0 0} ======== me is 0 term is 95 receive from 4
+2021/07/12 21:12:28 0 : 2
+2021/07/12 21:12:28 1 : 1
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 344
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 345
+2021/07/12 21:12:28 ========== {90 false 0 0} ======== me is 1 term is 90 receive from 0
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 346
+2021/07/12 21:12:28 0 receive 2 vote and status is 0 in term 95 and now term is 95
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 347
+2021/07/12 21:12:28 1 receive 1 vote and status is 0 in term 95 and now term is 95
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 348
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 349
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 350
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 351
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 352
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 353
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 354
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 355
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 356
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 357
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 358
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 359
+2021/07/12 21:12:28 ========== {95 false 0 0} ======== me is 1 term is 95 receive from 0
+2021/07/12 21:12:28 ========== {95 false 0 0} ======== me is 0 term is 95 receive from 1
+2021/07/12 21:12:28 2 : 1
+2021/07/12 21:12:28 1 : 1
+2021/07/12 21:12:28 0 not vote to 1 in term 96 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:28 4 vote to 1 in term 96 reply is &{95 true 0 0}
+2021/07/12 21:12:28 ========== {95 true 0 0} ======== me is 1 term is 96 receive from 4
+2021/07/12 21:12:28 1 : 2
+2021/07/12 21:12:28 2 receive 1 vote and status is 0 in term 80 and now term is 80
+2021/07/12 21:12:28 0 : 1
+2021/07/12 21:12:28 1 receive 2 vote and status is 0 in term 96 and now term is 96
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 360
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 361
+2021/07/12 21:12:28 1 vote to 0 in term 97 reply is &{96 true 0 0}
+2021/07/12 21:12:28 4 vote to 0 in term 97 reply is &{96 true 0 0}
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 362
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 363
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 364
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 365
+2021/07/12 21:12:28 0 receive 1 vote and status is 0 in term 97 and now term is 97
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 366
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 367
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 368
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 369
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 370
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 371
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 372
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 373
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 374
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 375
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 376
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 377
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 378
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 379
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 380
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 381
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 382
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 383
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 384
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 385
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 386
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 387
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 388
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 389
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 390
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 391
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 392
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 393
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 394
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 395
+2021/07/12 21:12:28 2 : 1
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 396
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 397
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 398
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 399
+2021/07/12 21:12:28 ===leader is me 3 == , now logs len is 400
+2021/07/12 21:12:28 0 : 1
+2021/07/12 21:12:28 2 receive 1 vote and status is 0 in term 81 and now term is 81
+2021/07/12 21:12:28 1 vote to 0 in term 98 reply is &{97 true 0 0}
+2021/07/12 21:12:28 0 : 1
+2021/07/12 21:12:28 ========== {90 true 0 0} ======== me is 0 term is 91 receive from 1
+2021/07/12 21:12:28 4 vote to 0 in term 98 reply is &{97 true 0 0}
+2021/07/12 21:12:28 0 receive 1 vote and status is 0 in term 98 and now term is 98
+2021/07/12 21:12:28 ========== {96 true 0 0} ======== me is 0 term is 97 receive from 1
+2021/07/12 21:12:29 ========== {95 false 0 0} ======== me is 1 term is 96 receive from 0
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 401
+2021/07/12 21:12:29 ========== {93 false 0 0} ======== me is 4 term is 94 receive from 1
+2021/07/12 21:12:29 1 : 1
+2021/07/12 21:12:29 0 not vote to 1 in term 99 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:29 ========== {98 false 0 0} ======== me is 1 term is 99 receive from 0
+2021/07/12 21:12:29 4 vote to 1 in term 99 reply is &{98 true 0 0}
+2021/07/12 21:12:29 0 : 1
+2021/07/12 21:12:29 1 vote to 0 in term 100 reply is &{99 true 0 0}
+2021/07/12 21:12:29 0 : 1
+2021/07/12 21:12:29 1 receive 1 vote and status is 0 in term 99 and now term is 100
+2021/07/12 21:12:29 0 receive 1 vote and status is 0 in term 100 and now term is 100
+2021/07/12 21:12:29 2 : 1
+2021/07/12 21:12:29 2 receive 1 vote and status is 0 in term 82 and now term is 82
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 402
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 403
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 404
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 405
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 406
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 407
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 408
+2021/07/12 21:12:29 ========== {97 true 0 0} ======== me is 0 term is 98 receive from 4
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 409
+2021/07/12 21:12:29 ========== {96 true 0 0} ======== me is 0 term is 97 receive from 4
+2021/07/12 21:12:29 4 : 1
+2021/07/12 21:12:29 ========== {100 false 0 0} ======== me is 4 term is 100 receive from 0
+2021/07/12 21:12:29 4 receive 1 vote and status is 0 in term 100 and now term is 100
+2021/07/12 21:12:29 1 : 1
+2021/07/12 21:12:29 2 : 1
+2021/07/12 21:12:29 0 : 1
+2021/07/12 21:12:29 4 vote to 1 in term 101 reply is &{100 true 0 0}
+2021/07/12 21:12:29 ========== {100 true 0 0} ======== me is 1 term is 101 receive from 4
+2021/07/12 21:12:29 1 : 2
+2021/07/12 21:12:29 1 receive 2 vote and status is 0 in term 101 and now term is 101
+2021/07/12 21:12:29 2 receive 1 vote and status is 0 in term 83 and now term is 83
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 410
+2021/07/12 21:12:29 0 receive 1 vote and status is 0 in term 101 and now term is 101
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 411
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 412
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 413
+2021/07/12 21:12:29 ========== {98 true 0 0} ======== me is 1 term is 99 receive from 4
+2021/07/12 21:12:29 ========== {99 true 0 0} ======== me is 0 term is 100 receive from 1
+2021/07/12 21:12:29 ========== {101 false 0 0} ======== me is 0 term is 101 receive from 1
+2021/07/12 21:12:29 0 : 1
+2021/07/12 21:12:29 1 vote to 0 in term 102 reply is &{101 true 0 0}
+2021/07/12 21:12:29 0 : 1
+2021/07/12 21:12:29 4 vote to 0 in term 102 reply is &{101 true 0 0}
+2021/07/12 21:12:29 ========== {101 true 0 0} ======== me is 0 term is 102 receive from 4
+2021/07/12 21:12:29 0 : 2
+2021/07/12 21:12:29 0 receive 2 vote and status is 0 in term 102 and now term is 102
+2021/07/12 21:12:29 ========== {95 false 0 0} ======== me is 1 term is 95 receive from 4
+2021/07/12 21:12:29 ========== {101 false 0 0} ======== me is 1 term is 101 receive from 0
+2021/07/12 21:12:29 2 : 1
+2021/07/12 21:12:29 2 receive 1 vote and status is 0 in term 84 and now term is 84
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 414
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 415
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 416
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 417
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 418
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 419
+2021/07/12 21:12:29 ===leader is me 3 == , now logs len is 420
+2021/07/12 21:12:30 ========== {100 false 0 0} ======== me is 4 term is 100 receive from 1
+2021/07/12 21:12:30 1 : 1
+2021/07/12 21:12:30 0 not vote to 1 in term 103 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:30 4 vote to 1 in term 103 reply is &{102 true 0 0}
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 421
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 422
+2021/07/12 21:12:30 1 receive 1 vote and status is 0 in term 103 and now term is 103
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 423
+2021/07/12 21:12:30 2 : 1
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 424
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 425
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 426
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 427
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 428
+2021/07/12 21:12:30 0 : 1
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 429
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 430
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 431
+2021/07/12 21:12:30 1 vote to 0 in term 104 reply is &{103 true 0 0}
+2021/07/12 21:12:30 2 receive 1 vote and status is 0 in term 85 and now term is 85
+2021/07/12 21:12:30 4 vote to 0 in term 104 reply is &{103 true 0 0}
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 432
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 433
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 434
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 435
+2021/07/12 21:12:30 0 receive 1 vote and status is 0 in term 104 and now term is 104
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 436
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 437
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 438
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 439
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 440
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 441
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 442
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 443
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 444
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 445
+2021/07/12 21:12:30 ========== {101 false 0 0} ======== me is 0 term is 101 receive from 4
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 446
+2021/07/12 21:12:30 0 : 1
+2021/07/12 21:12:30 4 vote to 0 in term 105 reply is &{104 true 0 0}
+2021/07/12 21:12:30 ========== {104 true 0 0} ======== me is 0 term is 105 receive from 4
+2021/07/12 21:12:30 0 : 2
+2021/07/12 21:12:30 1 vote to 0 in term 105 reply is &{104 true 0 0}
+2021/07/12 21:12:30 2 : 1
+2021/07/12 21:12:30 0 receive 2 vote and status is 0 in term 105 and now term is 105
+2021/07/12 21:12:30 2 receive 1 vote and status is 0 in term 86 and now term is 86
+2021/07/12 21:12:30 ========== {103 true 0 0} ======== me is 0 term is 104 receive from 1
+2021/07/12 21:12:30 ========== {103 true 0 0} ======== me is 0 term is 104 receive from 4
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 447
+2021/07/12 21:12:30 4 : 1
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 448
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 449
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 450
+2021/07/12 21:12:30 1 not vote to 4 in term 106 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:30 0 not vote to 4 in term 106 and my lastLogTerm is 58 len is 136 args lastterm is 13  len is 145
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 451
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 452
+2021/07/12 21:12:30 1 : 1
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 453
+2021/07/12 21:12:30 0 : 1
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 454
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 455
+2021/07/12 21:12:30 ========== {107 false 0 0} ======== me is 0 term is 107 receive from 1
+2021/07/12 21:12:30 4 receive 1 vote and status is 0 in term 106 and now term is 106
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 456
+2021/07/12 21:12:30 0 : 1
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 457
+2021/07/12 21:12:30 4 vote to 1 in term 107 reply is &{106 true 0 0}
+2021/07/12 21:12:30 ========== {106 true 0 0} ======== me is 1 term is 107 receive from 4
+2021/07/12 21:12:30 1 : 2
+2021/07/12 21:12:30 ===leader is me 3 == , now logs len is 458
+2021/07/12 21:12:30 1 receive 2 vote and status is 0 in term 107 and now term is 107
+2021/07/12 21:12:30 0 receive 1 vote and status is 0 in term 107 and now term is 107
+2021/07/12 21:12:30 2 : 1
+2021/07/12 21:12:30 ========== {102 false 0 0} ======== me is 1 term is 103 receive from 0
+2021/07/12 21:12:30 2 receive 1 vote and status is 0 in term 87 and now term is 87
+2021/07/12 21:12:30 ========== {102 true 0 0} ======== me is 1 term is 103 receive from 4
+2021/07/12 21:12:30 0 : 1
+2021/07/12 21:12:31 4 vote to 0 in term 108 reply is &{107 true 0 0}
+2021/07/12 21:12:31 0 : 1
+2021/07/12 21:12:31 1 vote to 0 in term 108 reply is &{107 true 0 0}
+2021/07/12 21:12:31 ========== {107 true 0 0} ======== me is 0 term is 108 receive from 1
+2021/07/12 21:12:31 0 : 2
+2021/07/12 21:12:31 0 receive 2 vote and status is 0 in term 108 and now term is 108
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 459
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 460
+2021/07/12 21:12:31 2 : 1
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 461
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 462
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 463
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 464
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 465
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 466
+2021/07/12 21:12:31 2 receive 1 vote and status is 0 in term 88 and now term is 88
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 467
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 468
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 469
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 470
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 471
+2021/07/12 21:12:31 4 : 1
+2021/07/12 21:12:31 0 : 1
+2021/07/12 21:12:31 4 : 1
+2021/07/12 21:12:31 1 not vote to 4 in term 109 and my lastLogTerm is 18 len is 393 args lastterm is 13  len is 145
+2021/07/12 21:12:31 4 : 1
+2021/07/12 21:12:31 0 : 1
+2021/07/12 21:12:31 1 : 1
+2021/07/12 21:12:31 4 receive 1 vote and status is 0 in term 109 and now term is 109
+2021/07/12 21:12:31 4 vote to 1 in term 110 reply is &{109 true 0 0}
+2021/07/12 21:12:31 1 : 1
+2021/07/12 21:12:31 0 receive 1 vote and status is 0 in term 109 and now term is 109
+2021/07/12 21:12:31 0 not vote to 1 in term 110 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:31 ========== {109 false 0 0} ======== me is 1 term is 110 receive from 0
+2021/07/12 21:12:31 1 receive 1 vote and status is 0 in term 110 and now term is 110
+2021/07/12 21:12:31 2 : 1
+2021/07/12 21:12:31 ========== {105 false 0 0} ======== me is 4 term is 106 receive from 1
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 472
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 473
+2021/07/12 21:12:31 2 receive 1 vote and status is 0 in term 89 and now term is 89
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 474
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 475
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 476
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 477
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 478
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 479
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 480
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 481
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 482
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 483
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 484
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 485
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 486
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 487
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 488
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 489
+2021/07/12 21:12:31 ========== {107 false 0 0} ======== me is 1 term is 107 receive from 0
+2021/07/12 21:12:31 1 : 1
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 490
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 491
+2021/07/12 21:12:31 0 not vote to 1 in term 111 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:31 ===leader is me 3 == , now logs len is 492
+2021/07/12 21:12:31 0 : 1
+2021/07/12 21:12:31 1 : 1
+2021/07/12 21:12:31 4 : 1
+2021/07/12 21:12:31 4 : 1
+2021/07/12 21:12:31 1 vote to 0 in term 112 reply is &{111 true 0 0}
+2021/07/12 21:12:31 4 vote to 0 in term 112 reply is &{111 true 0 0}
+2021/07/12 21:12:31 candidate 4 term is 111 and my term is 112 and votedFor is 0
+2021/07/12 21:12:31 1 receive 1 vote and status is 0 in term 111 and now term is 112
+2021/07/12 21:12:31 0 receive 1 vote and status is 0 in term 112 and now term is 112
+2021/07/12 21:12:31 4 receive 1 vote and status is 0 in term 111 and now term is 112
+2021/07/12 21:12:31 ========== {104 true 0 0} ======== me is 0 term is 105 receive from 1
+2021/07/12 21:12:31 2 : 1
+2021/07/12 21:12:31 2 receive 1 vote and status is 0 in term 90 and now term is 90
+2021/07/12 21:12:31 1 : 1
+2021/07/12 21:12:31 4 vote to 1 in term 113 reply is &{112 true 0 0}
+2021/07/12 21:12:31 ========== {112 true 0 0} ======== me is 1 term is 113 receive from 4
+2021/07/12 21:12:31 1 : 2
+2021/07/12 21:12:31 0 not vote to 1 in term 113 and my lastLogTerm is 58 len is 136 args lastterm is 18  len is 393
+2021/07/12 21:12:31 ========== {112 false 0 0} ======== me is 1 term is 113 receive from 0
+2021/07/12 21:12:31 0 : 1
+2021/07/12 21:12:31 4 vote to 0 in term 114 reply is &{113 true 0 0}
+2021/07/12 21:12:31 ========== {113 true 0 0} ======== me is 0 term is 114 receive from 4
+2021/07/12 21:12:31 0 : 2
+2021/07/12 21:12:31 1 receive 2 vote and status is 0 in term 113 and now term is 113
+2021/07/12 21:12:31 1 vote to 0 in term 114 reply is &{113 true 0 0}
+2021/07/12 21:12:31 ========== {113 true 0 0} ======== me is 0 term is 114 receive from 1
+2021/07/12 21:12:31 0 : 3
+2021/07/12 21:12:31 0 receive 3 vote and status is 2 in term 114 and now term is 114
+2021/07/12 21:12:31 ========== {105 false 0 0} ======== me is 4 term is 106 receive from 0
+2021/07/12 21:12:31 ========== {110 false 0 0} ======== me is 1 term is 111 receive from 0
+2021/07/12 21:12:32 2 : 1
+2021/07/12 21:12:32 ========== {112 false 0 0} ======== me is 4 term is 111 receive from 0
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 138
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 493
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 139
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 494
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 140
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 495
+2021/07/12 21:12:32 2 receive 1 vote and status is 0 in term 91 and now term is 91
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 141
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 496
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 142
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 497
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 143
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 498
+2021/07/12 21:12:32 2 : 1
+2021/07/12 21:12:32 2 receive 1 vote and status is 0 in term 92 and now term is 92
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 144
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 499
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 145
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 500
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 146
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 501
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 147
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 502
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 148
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 503
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 149
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 504
+2021/07/12 21:12:32 ========== {109 false 0 0} ======== me is 0 term is 109 receive from 4
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 150
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 505
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 151
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 506
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 152
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 507
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 153
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 508
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 154
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 509
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 155
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 510
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 156
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 511
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 157
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 512
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 158
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 513
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 159
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 514
+2021/07/12 21:12:32 ========== {111 true 0 0} ======== me is 0 term is 112 receive from 4
+2021/07/12 21:12:32 2 : 1
+2021/07/12 21:12:32 2 receive 1 vote and status is 0 in term 93 and now term is 93
+2021/07/12 21:12:32 ========== {111 true 0 0} ======== me is 0 term is 112 receive from 1
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 160
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 515
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 161
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 516
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 162
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 517
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 163
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 518
+2021/07/12 21:12:32 ===leader is me 0 == , now logs len is 164
+2021/07/12 21:12:32 ===leader is me 3 == , now logs len is 519
+2021/07/12 21:12:32 2 : 1
+2021/07/12 21:12:33 2 receive 1 vote and status is 0 in term 94 and now term is 94
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 165
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 520
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 166
+2021/07/12 21:12:33 2 : 1
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 521
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 167
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 522
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 168
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 523
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 169
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 524
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 170
+2021/07/12 21:12:33 2 receive 1 vote and status is 0 in term 95 and now term is 95
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 525
+2021/07/12 21:12:33 2 : 1
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 171
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 526
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 172
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 527
+2021/07/12 21:12:33 2 receive 1 vote and status is 0 in term 96 and now term is 96
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 173
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 528
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 174
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 529
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 175
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 530
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 176
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 531
+2021/07/12 21:12:33 ===leader is me 0 == , now logs len is 177
+2021/07/12 21:12:33 ===leader is me 3 == , now logs len is 532
+2021/07/12 21:12:33 leader term is 58 and my term is 114
+2021/07/12 21:12:33 leader term is 58 and my term is 114
+2021/07/12 21:12:33 leader term is 58 and my term is 114
+2021/07/12 21:12:33 leader term is 58 and my term is 114
+2021/07/12 21:12:33 leader term is 58 and my term is 114
+2021/07/12 21:12:34 1 : 1
+2021/07/12 21:12:34 2 : 1
+2021/07/12 21:12:34 4 vote to 1 in term 115 reply is &{114 true 0 0}
+2021/07/12 21:12:34 ========== {114 true 0 0} ======== me is 1 term is 115 receive from 4
+2021/07/12 21:12:34 1 : 2
+2021/07/12 21:12:34 3 vote to 1 in term 115 reply is &{58 true 0 0}
+2021/07/12 21:12:34 3 : 1
+2021/07/12 21:12:34 1 receive 2 vote and status is 0 in term 115 and now term is 115
+2021/07/12 21:12:34 4 not vote to 3 in term 116 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:34 ========== {115 false 0 0} ======== me is 3 term is 116 receive from 4
+2021/07/12 21:12:34 2 receive 1 vote and status is 0 in term 97 and now term is 97
+2021/07/12 21:12:34 1 not vote to 3 in term 116 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:34 3 : 1
+2021/07/12 21:12:34 3 receive 1 vote and status is 0 in term 116 and now term is 116
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 178
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 179
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 180
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 181
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 182
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 183
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 184
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 185
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 186
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 187
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 188
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 189
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 190
+2021/07/12 21:12:34 2 : 1
+2021/07/12 21:12:34 2 receive 1 vote and status is 0 in term 98 and now term is 98
+2021/07/12 21:12:34 4 : 1
+2021/07/12 21:12:34 1 : 1
+2021/07/12 21:12:34 4 : 1
+2021/07/12 21:12:34 3 vote to 4 in term 117 reply is &{116 true 0 0}
+2021/07/12 21:12:34 ========== {58 true 0 0} ======== me is 1 term is 115 receive from 3
+2021/07/12 21:12:34 ========== {117 false 0 0} ======== me is 1 term is 117 receive from 3
+2021/07/12 21:12:34 4 receive 1 vote and status is 0 in term 117 and now term is 117
+2021/07/12 21:12:34 1 receive 1 vote and status is 0 in term 117 and now term is 117
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 191
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 192
+2021/07/12 21:12:34 2 : 1
+2021/07/12 21:12:34 2 : 1
+2021/07/12 21:12:34 2 receive 1 vote and status is 0 in term 99 and now term is 99
+2021/07/12 21:12:34 4 : 1
+2021/07/12 21:12:34 3 : 1
+2021/07/12 21:12:34 1 : 1
+2021/07/12 21:12:34 1 : 1
+2021/07/12 21:12:34 ========== {118 false 0 0} ======== me is 4 term is 118 receive from 3
+2021/07/12 21:12:34 3 : 1
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 193
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 194
+2021/07/12 21:12:34 ========== {118 false 0 0} ======== me is 3 term is 118 receive from 1
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 195
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 196
+2021/07/12 21:12:34 4 receive 1 vote and status is 0 in term 118 and now term is 118
+2021/07/12 21:12:34 ===leader is me 0 == , now logs len is 197
+2021/07/12 21:12:34 3 receive 1 vote and status is 0 in term 118 and now term is 118
+2021/07/12 21:12:34 1 receive 1 vote and status is 0 in term 118 and now term is 118
+2021/07/12 21:12:34 2 : 1
+2021/07/12 21:12:34 2 receive 1 vote and status is 0 in term 100 and now term is 100
+2021/07/12 21:12:35 ========== {116 true 0 0} ======== me is 4 term is 117 receive from 3
+2021/07/12 21:12:35 3 : 1
+2021/07/12 21:12:35 1 not vote to 3 in term 119 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:35 ========== {118 false 0 0} ======== me is 3 term is 119 receive from 1
+2021/07/12 21:12:35 4 not vote to 3 in term 119 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:35 ========== {118 false 0 0} ======== me is 3 term is 119 receive from 4
+2021/07/12 21:12:35 3 receive 1 vote and status is 0 in term 119 and now term is 119
+2021/07/12 21:12:35 4 : 1
+2021/07/12 21:12:35 ========== {118 false 0 0} ======== me is 4 term is 118 receive from 1
+2021/07/12 21:12:35 1 vote to 4 in term 120 reply is &{119 true 0 0}
+2021/07/12 21:12:35 3 vote to 4 in term 120 reply is &{119 true 0 0}
+2021/07/12 21:12:35 4 receive 1 vote and status is 0 in term 120 and now term is 120
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 198
+2021/07/12 21:12:35 ========== {118 false 0 0} ======== me is 3 term is 118 receive from 4
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 199
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 200
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 201
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 202
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 203
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 204
+2021/07/12 21:12:35 2 : 1
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 205
+2021/07/12 21:12:35 ========== {118 false 0 0} ======== me is 1 term is 118 receive from 4
+2021/07/12 21:12:35 2 receive 1 vote and status is 0 in term 101 and now term is 101
+2021/07/12 21:12:35 ========== {117 false 0 0} ======== me is 1 term is 117 receive from 4
+2021/07/12 21:12:35 4 : 1
+2021/07/12 21:12:35 ========== {119 true 0 0} ======== me is 4 term is 120 receive from 3
+2021/07/12 21:12:35 1 vote to 4 in term 121 reply is &{120 true 0 0}
+2021/07/12 21:12:35 4 : 1
+2021/07/12 21:12:35 3 vote to 4 in term 121 reply is &{120 true 0 0}
+2021/07/12 21:12:35 ========== {120 true 0 0} ======== me is 4 term is 121 receive from 3
+2021/07/12 21:12:35 4 : 2
+2021/07/12 21:12:35 4 receive 2 vote and status is 0 in term 121 and now term is 121
+2021/07/12 21:12:35 2 : 1
+2021/07/12 21:12:35 2 receive 1 vote and status is 0 in term 102 and now term is 102
+2021/07/12 21:12:35 1 : 1
+2021/07/12 21:12:35 3 vote to 1 in term 122 reply is &{121 true 0 0}
+2021/07/12 21:12:35 4 vote to 1 in term 122 reply is &{121 true 0 0}
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 206
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 207
+2021/07/12 21:12:35 1 receive 1 vote and status is 0 in term 122 and now term is 122
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 208
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 209
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 210
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 211
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 212
+2021/07/12 21:12:35 2 : 1
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 213
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 214
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 215
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 216
+2021/07/12 21:12:35 ===leader is me 0 == , now logs len is 217
+2021/07/12 21:12:35 2 receive 1 vote and status is 0 in term 103 and now term is 103
+2021/07/12 21:12:35 1 : 1
+2021/07/12 21:12:36 3 vote to 1 in term 123 reply is &{122 true 0 0}
+2021/07/12 21:12:36 4 vote to 1 in term 123 reply is &{122 true 0 0}
+2021/07/12 21:12:36 1 : 1
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 218
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 219
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 220
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 221
+2021/07/12 21:12:36 1 receive 1 vote and status is 0 in term 123 and now term is 123
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 222
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 223
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 224
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 225
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 226
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 227
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 228
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 229
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 230
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 231
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 232
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 233
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 234
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 235
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 236
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 237
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 238
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 239
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 240
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 241
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 242
+2021/07/12 21:12:36 2 : 1
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 243
+2021/07/12 21:12:36 2 : 1
+2021/07/12 21:12:36 2 receive 1 vote and status is 0 in term 104 and now term is 104
+2021/07/12 21:12:36 3 : 1
+2021/07/12 21:12:36 1 not vote to 3 in term 124 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:36 3 : 1
+2021/07/12 21:12:36 3 receive 1 vote and status is 0 in term 124 and now term is 124
+2021/07/12 21:12:36 1 : 1
+2021/07/12 21:12:36 4 : 1
+2021/07/12 21:12:36 1 : 1
+2021/07/12 21:12:36 4 vote to 1 in term 125 reply is &{124 true 0 0}
+2021/07/12 21:12:36 ========== {121 true 0 0} ======== me is 1 term is 122 receive from 3
+2021/07/12 21:12:36 candidate 4 term is 124 and my term is 125 and votedFor is 1
+2021/07/12 21:12:36 1 receive 1 vote and status is 0 in term 125 and now term is 125
+2021/07/12 21:12:36 4 receive 1 vote and status is 0 in term 124 and now term is 125
+2021/07/12 21:12:36 ========== {122 true 0 0} ======== me is 1 term is 123 receive from 3
+2021/07/12 21:12:36 2 : 1
+2021/07/12 21:12:36 2 receive 1 vote and status is 0 in term 105 and now term is 105
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 244
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 245
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 246
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 247
+2021/07/12 21:12:36 3 : 1
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 248
+2021/07/12 21:12:36 3 : 1
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 249
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 250
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 251
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 252
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 253
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 254
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 255
+2021/07/12 21:12:36 3 receive 1 vote and status is 0 in term 125 and now term is 125
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 256
+2021/07/12 21:12:36 1 : 1
+2021/07/12 21:12:36 1 : 1
+2021/07/12 21:12:36 4 : 1
+2021/07/12 21:12:36 3 vote to 1 in term 126 reply is &{125 true 0 0}
+2021/07/12 21:12:36 ========== {124 false 0 0} ======== me is 4 term is 124 receive from 3
+2021/07/12 21:12:36 ========== {121 true 0 0} ======== me is 1 term is 122 receive from 4
+2021/07/12 21:12:36 ========== {124 true 0 0} ======== me is 1 term is 125 receive from 4
+2021/07/12 21:12:36 1 receive 1 vote and status is 0 in term 126 and now term is 126
+2021/07/12 21:12:36 4 receive 1 vote and status is 0 in term 126 and now term is 126
+2021/07/12 21:12:36 2 : 1
+2021/07/12 21:12:36 ========== {125 false 0 0} ======== me is 4 term is 124 receive from 1
+2021/07/12 21:12:36 2 receive 1 vote and status is 0 in term 106 and now term is 106
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 257
+2021/07/12 21:12:36 ===leader is me 0 == , now logs len is 258
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 259
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 260
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 261
+2021/07/12 21:12:37 3 : 1
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 262
+2021/07/12 21:12:37 1 not vote to 3 in term 127 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 263
+2021/07/12 21:12:37 4 not vote to 3 in term 127 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:37 3 : 1
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 264
+2021/07/12 21:12:37 3 receive 1 vote and status is 0 in term 127 and now term is 127
+2021/07/12 21:12:37 ========== {126 false 0 0} ======== me is 4 term is 126 receive from 1
+2021/07/12 21:12:37 ========== {119 true 0 0} ======== me is 4 term is 120 receive from 1
+2021/07/12 21:12:37 1 : 1
+2021/07/12 21:12:37 4 vote to 1 in term 128 reply is &{127 true 0 0}
+2021/07/12 21:12:37 3 vote to 1 in term 128 reply is &{127 true 0 0}
+2021/07/12 21:12:37 1 receive 1 vote and status is 0 in term 128 and now term is 128
+2021/07/12 21:12:37 ========== {125 false 0 0} ======== me is 3 term is 125 receive from 4
+2021/07/12 21:12:37 2 : 1
+2021/07/12 21:12:37 2 receive 1 vote and status is 0 in term 107 and now term is 107
+2021/07/12 21:12:37 ========== {127 true 0 0} ======== me is 1 term is 128 receive from 3
+2021/07/12 21:12:37 ========== {125 true 0 0} ======== me is 1 term is 126 receive from 3
+2021/07/12 21:12:37 3 : 1
+2021/07/12 21:12:37 4 not vote to 3 in term 129 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:37 1 not vote to 3 in term 129 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:37 3 : 1
+2021/07/12 21:12:37 3 receive 1 vote and status is 0 in term 129 and now term is 129
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 265
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 266
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 267
+2021/07/12 21:12:37 ========== {127 true 0 0} ======== me is 1 term is 128 receive from 4
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 268
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 269
+2021/07/12 21:12:37 1 : 1
+2021/07/12 21:12:37 3 vote to 1 in term 130 reply is &{129 true 0 0}
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 270
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 271
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 272
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 273
+2021/07/12 21:12:37 4 vote to 1 in term 130 reply is &{129 true 0 0}
+2021/07/12 21:12:37 ========== {129 true 0 0} ======== me is 1 term is 130 receive from 4
+2021/07/12 21:12:37 1 : 2
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 274
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 275
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 276
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 277
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 278
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 279
+2021/07/12 21:12:37 1 receive 2 vote and status is 0 in term 130 and now term is 130
+2021/07/12 21:12:37 2 : 1
+2021/07/12 21:12:37 2 : 1
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 280
+2021/07/12 21:12:37 2 receive 1 vote and status is 0 in term 108 and now term is 108
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 281
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 282
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 283
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 284
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 285
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 286
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 287
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 288
+2021/07/12 21:12:37 ========== {123 false 0 0} ======== me is 3 term is 124 receive from 1
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 289
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 290
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 291
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 292
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 293
+2021/07/12 21:12:37 ========== {126 false 0 0} ======== me is 3 term is 127 receive from 1
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 294
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 295
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 296
+2021/07/12 21:12:37 ========== {126 false 0 0} ======== me is 4 term is 126 receive from 3
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 297
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 298
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 299
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 300
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 301
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 302
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 303
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 304
+2021/07/12 21:12:37 ===leader is me 0 == , now logs len is 305
+2021/07/12 21:12:37 3 : 1
+2021/07/12 21:12:37 4 : 1
+2021/07/12 21:12:37 1 not vote to 3 in term 131 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:37 ========== {130 false 0 0} ======== me is 3 term is 131 receive from 1
+2021/07/12 21:12:37 1 vote to 4 in term 131 reply is &{131 true 0 0}
+2021/07/12 21:12:37 4 : 1
+2021/07/12 21:12:37 3 receive 1 vote and status is 0 in term 131 and now term is 131
+2021/07/12 21:12:37 4 receive 1 vote and status is 0 in term 131 and now term is 131
+2021/07/12 21:12:37 2 : 1
+2021/07/12 21:12:37 2 receive 1 vote and status is 0 in term 109 and now term is 109
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 306
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 307
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 308
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 309
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 310
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 311
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 312
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 313
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 314
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 315
+2021/07/12 21:12:38 ========== {128 false 0 0} ======== me is 3 term is 129 receive from 4
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 316
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 317
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 318
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 319
+2021/07/12 21:12:38 3 : 1
+2021/07/12 21:12:38 1 not vote to 3 in term 132 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:38 4 not vote to 3 in term 132 and my lastLogTerm is 114 len is 169 args lastterm is 58  len is 531
+2021/07/12 21:12:38 3 : 1
+2021/07/12 21:12:38 3 receive 1 vote and status is 0 in term 132 and now term is 132
+2021/07/12 21:12:38 4 : 1
+2021/07/12 21:12:38 1 vote to 4 in term 133 reply is &{132 true 0 0}
+2021/07/12 21:12:38 3 vote to 4 in term 133 reply is &{132 true 0 0}
+2021/07/12 21:12:38 4 receive 1 vote and status is 0 in term 133 and now term is 133
+2021/07/12 21:12:38 2 : 1
+2021/07/12 21:12:38 ========== {131 false 0 0} ======== me is 3 term is 131 receive from 4
+2021/07/12 21:12:38 2 receive 1 vote and status is 0 in term 110 and now term is 110
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 320
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 321
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 322
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 323
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 324
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 325
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 326
+2021/07/12 21:12:38 4 : 1
+2021/07/12 21:12:38 3 vote to 4 in term 134 reply is &{133 true 0 0}
+2021/07/12 21:12:38 1 vote to 4 in term 134 reply is &{133 true 0 0}
+2021/07/12 21:12:38 4 receive 1 vote and status is 0 in term 134 and now term is 134
+2021/07/12 21:12:38 2 : 1
+2021/07/12 21:12:38 ========== {131 false 0 0} ======== me is 3 term is 132 receive from 1
+2021/07/12 21:12:38 2 receive 1 vote and status is 0 in term 111 and now term is 111
+2021/07/12 21:12:38 4 : 1
+2021/07/12 21:12:38 ========== {129 true 0 0} ======== me is 1 term is 130 receive from 3
+2021/07/12 21:12:38 1 vote to 4 in term 135 reply is &{134 true 0 0}
+2021/07/12 21:12:38 4 : 1
+2021/07/12 21:12:38 3 vote to 4 in term 135 reply is &{134 true 0 0}
+2021/07/12 21:12:38 4 receive 1 vote and status is 0 in term 135 and now term is 135
+2021/07/12 21:12:38 ========== {132 true 0 0} ======== me is 4 term is 133 receive from 3
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 327
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 328
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 329
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 330
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 331
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 332
+2021/07/12 21:12:38 ===leader is me 0 == , now logs len is 333
+2021/07/12 21:12:38 2 : 1
+2021/07/12 21:12:39 2 receive 1 vote and status is 0 in term 112 and now term is 112
+2021/07/12 21:12:39 ========== {133 true 0 0} ======== me is 4 term is 134 receive from 3
+2021/07/12 21:12:39 4 : 1
+2021/07/12 21:12:39 4 : 1
+2021/07/12 21:12:39 3 : 1
+2021/07/12 21:12:39 1 vote to 4 in term 136 reply is &{135 true 0 0}
+2021/07/12 21:12:39 ========== {135 true 0 0} ======== me is 4 term is 136 receive from 1
+2021/07/12 21:12:39 4 : 2
+2021/07/12 21:12:39 ========== {136 false 0 0} ======== me is 3 term is 136 receive from 1
+2021/07/12 21:12:39 4 receive 2 vote and status is 0 in term 136 and now term is 136
+2021/07/12 21:12:39 3 receive 1 vote and status is 0 in term 136 and now term is 136
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 334
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 335
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 336
+2021/07/12 21:12:39 ========== {131 true 0 0} ======== me is 4 term is 131 receive from 1
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 337
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 338
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 339
+2021/07/12 21:12:39 ========== {132 true 0 0} ======== me is 4 term is 133 receive from 1
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 340
+2021/07/12 21:12:39 2 : 1
+2021/07/12 21:12:39 4 : 1
+2021/07/12 21:12:39 1 vote to 4 in term 137 reply is &{136 true 0 0}
+2021/07/12 21:12:39 4 : 1
+2021/07/12 21:12:39 2 receive 1 vote and status is 0 in term 113 and now term is 113
+2021/07/12 21:12:39 4 : 1
+2021/07/12 21:12:39 ========== {134 true 0 0} ======== me is 4 term is 135 receive from 3
+2021/07/12 21:12:39 4 receive 1 vote and status is 0 in term 137 and now term is 137
+2021/07/12 21:12:39 3 : 1
+2021/07/12 21:12:39 3 receive 1 vote and status is 0 in term 137 and now term is 137
+2021/07/12 21:12:39 4 : 1
+2021/07/12 21:12:39 1 vote to 4 in term 138 reply is &{137 true 0 0}
+2021/07/12 21:12:39 3 vote to 4 in term 138 reply is &{137 true 0 0}
+2021/07/12 21:12:39 ========== {137 true 0 0} ======== me is 4 term is 138 receive from 3
+2021/07/12 21:12:39 4 : 2
+2021/07/12 21:12:39 4 receive 2 vote and status is 0 in term 138 and now term is 138
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 341
+2021/07/12 21:12:39 2 : 1
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 342
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 343
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 344
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 345
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 346
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 347
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 348
+2021/07/12 21:12:39 ===leader is me 0 == , now logs len is 349
+2021/07/12 21:12:39 2 receive 1 vote and status is 0 in term 114 and now term is 114
+2021/07/12 21:12:39 1 : 1
+2021/07/12 21:12:39 1 : 1
+2021/07/12 21:12:39 4 vote to 1 in term 139 reply is &{138 true 0 0}
+2021/07/12 21:12:39 ========== {137 false 0 0} ======== me is 3 term is 137 receive from 4
+2021/07/12 21:12:39 2 : 1
+2021/07/12 21:12:39 3 : 1
+2021/07/12 21:12:39 3 : 1
+2021/07/12 21:12:39 1 receive 1 vote and status is 0 in term 139 and now term is 139
+2021/07/12 21:12:40 2 receive 1 vote and status is 0 in term 115 and now term is 115
+2021/07/12 21:12:40 3 receive 1 vote and status is 0 in term 139 and now term is 139
+2021/07/12 21:12:40 ========== {136 false 0 0} ======== me is 3 term is 136 receive from 4
+2021/07/12 21:12:40 ========== {133 true 0 0} ======== me is 4 term is 134 receive from 1
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 350
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 351
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 352
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 353
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 354
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 355
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 356
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 357
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 358
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 359
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 360
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 361
+2021/07/12 21:12:40 4 : 1
+2021/07/12 21:12:40 3 vote to 4 in term 140 reply is &{139 true 0 0}
+2021/07/12 21:12:40 1 vote to 4 in term 140 reply is &{139 true 0 0}
+2021/07/12 21:12:40 ========== {139 true 0 0} ======== me is 4 term is 140 receive from 1
+2021/07/12 21:12:40 4 : 2
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 362
+2021/07/12 21:12:40 4 receive 2 vote and status is 0 in term 140 and now term is 140
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 363
+2021/07/12 21:12:40 2 : 1
+2021/07/12 21:12:40 ========== {138 true 0 0} ======== me is 1 term is 139 receive from 4
+2021/07/12 21:12:40 2 receive 1 vote and status is 0 in term 116 and now term is 116
+2021/07/12 21:12:40 ========== {139 true 0 0} ======== me is 4 term is 140 receive from 3
+2021/07/12 21:12:40 4 : 1
+2021/07/12 21:12:40 1 vote to 4 in term 141 reply is &{140 true 0 0}
+2021/07/12 21:12:40 ========== {140 true 0 0} ======== me is 4 term is 141 receive from 1
+2021/07/12 21:12:40 4 : 2
+2021/07/12 21:12:40 3 vote to 4 in term 141 reply is &{140 true 0 0}
+2021/07/12 21:12:40 ========== {137 false 0 0} ======== me is 3 term is 137 receive from 1
+2021/07/12 21:12:40 4 receive 2 vote and status is 0 in term 141 and now term is 141
+2021/07/12 21:12:40 ========== {137 true 0 0} ======== me is 4 term is 138 receive from 1
+2021/07/12 21:12:40 ========== {139 false 0 0} ======== me is 3 term is 139 receive from 4
+2021/07/12 21:12:40 ===leader is me 0 == , now logs len is 364
+2021/07/12 21:12:40 leader term is 114 and my term is 116
+2021/07/12 21:12:40 leader term is 114 and my term is 141
+2021/07/12 21:12:40 leader term is 114 and my term is 141
+2021/07/12 21:12:40 leader term is 114 and my term is 141
+2021/07/12 21:12:40 2 : 1
+2021/07/12 21:12:40 2 : 1
+2021/07/12 21:12:40 candidate 2 term is 117 and my term is 141 and votedFor is 4
+2021/07/12 21:12:40 candidate 2 term is 117 and my term is 141 and votedFor is 4
+2021/07/12 21:12:40 candidate 2 term is 117 and my term is 141 and votedFor is 4
+2021/07/12 21:12:40 2 receive 1 vote and status is 0 in term 117 and now term is 117
+2021/07/12 21:12:40 0 : 1
+2021/07/12 21:12:40 4 vote to 0 in term 142 reply is &{141 true 0 0}
+2021/07/12 21:12:40 ========== {141 true 0 0} ======== me is 0 term is 142 receive from 4
+2021/07/12 21:12:40 0 : 2
+2021/07/12 21:12:40 1 vote to 0 in term 142 reply is &{141 true 0 0}
+2021/07/12 21:12:40 ========== {141 true 0 0} ======== me is 0 term is 142 receive from 1
+2021/07/12 21:12:40 0 : 3
+2021/07/12 21:12:40 0 receive 3 vote and status is 2 in term 142 and now term is 142
+2021/07/12 21:12:40 2 vote to 0 in term 142 reply is &{117 true 0 0}
+2021/07/12 21:12:40 ========== {117 true 0 0} ======== me is 0 term is 142 receive from 2
+2021/07/12 21:12:40 3 vote to 0 in term 142 reply is &{142 true 0 0}
+2021/07/12 21:12:40 ========== {141 false 0 0} ======== me is 2 term is 117 receive from 4
+2021/07/12 21:12:41 ========== {141 false 0 0} ======== me is 2 term is 117 receive from 1
+2021/07/12 21:12:41 ========== {140 true 0 0} ======== me is 4 term is 141 receive from 3
+2021/07/12 21:12:42 ========== {142 true 0 0} ======== me is 0 term is 142 receive from 3
+2021/07/12 21:12:42 ========== {141 false 0 0} ======== me is 2 term is 117 receive from 3
+2021/07/12 21:12:42 ===leader is me 0 == , now logs len is 365
+  ... Passed --  39.0  5 3532 5468502  364
+--- PASS: TestFigure8Unreliable2C (38.98s)
+PASS
+ok  	6.824/raft	39.064s

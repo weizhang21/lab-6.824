@@ -1,0 +1,25 @@
+=== RUN   TestPersist12C
+Test (2C): basic persistence ...
+2021/08/31 00:01:00 0 receive 2 vote and status is 2 in term 1 and now term is 1
+2021/08/31 00:01:00 ===leader is me 0 term 1 == , now index is 2  lastIncludedIndex is 0, len is 2
+2021/08/31 00:01:00 0 receive 2 vote and status is 2 in term 2 and now term is 2
+2021/08/31 00:01:00 1 receive 1 vote and status is 0 in term 2 and now term is 2
+2021/08/31 00:01:00 ===leader is me 0 term 2 == , now index is 3  lastIncludedIndex is 0, len is 3
+2021/08/31 00:01:00 2 receive 1 vote and status is 0 in term 2 and now term is 2
+2021/08/31 00:01:01 1 receive 2 vote and status is 2 in term 3 and now term is 3
+2021/08/31 00:01:01 ===leader is me 1 term 3 == , now index is 4  lastIncludedIndex is 0, len is 4
+2021/08/31 00:01:02 2 receive 2 vote and status is 2 in term 4 and now term is 4
+2021/08/31 00:01:02 ===leader is me 2 term 4 == , now index is 5  lastIncludedIndex is 0, len is 5
+2021/08/31 00:01:03 ===leader is me 2 term 4 == , now index is 6  lastIncludedIndex is 0, len is 6
+2021/08/31 00:01:03 ===leader is me 2 term 4 == , now index is 7  lastIncludedIndex is 0, len is 7
+  ... Passed --   3.5  3   88   22806    6
+--- PASS: TestPersist12C (3.48s)
+=== RUN   TestPersist22C
+Test (2C): more persistence ...
+2021/08/31 00:01:03 0 receive 1 vote and status is 0 in term 5 and now term is 5
+2021/08/31 00:01:03 0 receive 3 vote and status is 2 in term 1 and now term is 1
+2021/08/31 00:01:03 ===leader is me 0 term 1 == , now index is 2  lastIncludedIndex is 0, len is 2
+2021/08/31 00:01:03 0 receive 1 vote and status is 0 in term 5 and now term is 5
+2021/08/31 00:01:03 1 receive 1 vote and status is 0 in term 5 and now term is 5
+2021/08/31 00:01:04 ======1 2 disconnect=====
+2021/08/31 00:01:04 ===leader is me 0 term 1 == , now index is 3  lastIncludedIndex is 0, len is 3

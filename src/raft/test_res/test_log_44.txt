@@ -1,0 +1,6 @@
+=== RUN   TestSnapshotInstallUnCrash2D
+Test (2D): install snapshots (unreliable+crash) ...
+  ... Passed --  47.0  3  942  256515  355
+--- PASS: TestSnapshotInstallUnCrash2D (47.00s)
+PASS
+ok  	6.824/raft	47.044s
